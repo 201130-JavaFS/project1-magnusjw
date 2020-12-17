@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+	<hibernate-mapping>
+		<class name = "User" table = "Ers_Users">
+	     
+		     <meta attribute = "class-description">
+		        This class contains user details. 
+		     </meta>
+		     
+		     <id name = "id" type = "int" column = "userId">
+		        <generator class="native"/>
+		     </id>
+		     
+		     <property name = "username" column = "username" type = "string"/>
+		     <property name = "password" column = "password" type = "string"/>
+		     <property name = "firstName" column = "firstName" type = "string"/>
+		     <property name = "lastName" column = "lastName" type = "string"/>
+		     <property name = "email" column = "email" type = "string"/>
+		     <property name = "roleId" column = "roleId" type = "int"/>
+		    
+		</class>
+		
+		<class name = "Reimbursement" table = "Ers_Reimbursement">
+	     
+		     <meta attribute = "class-description">
+		        This class contains Reimbursement details. 
+		     </meta>
+		     
+		     <id name = "id" type = "int" column = "reimbId">
+		        <generator class="native"/>
+		     </id>
+		     
+		     <property name = "amount" column = "reimbAmount" type = "double"/>
+		     <property name = "submitted" column = "reimbSubmitted" type = "string"/>
+		     <property name = "resolved" column = "reimbResolved" type = "string"/>
+		     <property name = "description" column = "reimbDescription" type = "string"/>
+		     <property name = "receipt" column = "reimbReceipt" type = "blob"/>
+		     <property name = "authorId" column = "reimbAuthor" type = "int"/>
+		     <property name = "resolverId" column = "reimbResolver" type = "int"/>
+		     <property name = "statusId" column = "reimbStatusId" type = "int"/>
+		     <property name = "typeId" column = "reimbTypeId" type = "int"/>
+		    
+		</class>
+		
+		
+	</hibernate-mapping>

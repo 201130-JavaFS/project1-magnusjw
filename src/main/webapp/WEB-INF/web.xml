@@ -5,40 +5,26 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
-	<!-- This defines the servlet for the deployment descriptor -->
-	<servlet>
-		<display-name>LoginServlet</display-name>
-		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>com.revature.servlets.LoginServlet</servlet-class>
-	</servlet>
-	
-	<servlet>
-		<display-name>LogoutServlet</display-name>
-		<servlet-name>LogoutServlet</servlet-name>
-		<servlet-class>com.revature.servlets.LogoutServlet</servlet-class>
-	</servlet>
-	
-	<servlet>
-		<display-name>SuccessServlet</display-name>
-		<servlet-name>SuccessServlet</servlet-name>
-		<servlet-class>com.revature.servlets.SuccessServlet</servlet-class>
-	</servlet>
-	
-	<!-- This will map the above servlet to a url location. The URL pattern is added to the base URL of the application. -->
-	<!-- LocalHost:8080/HelloServlets/Hello-->
-	
-	<servlet-mapping>
-		<servlet-name>LoginServlet</servlet-name>
-		<url-pattern>/login</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>LogoutServlet</servlet-name>
-		<url-pattern>/logout</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>SuccessServlet</servlet-name>
-		<url-pattern>/success</url-pattern>
-	</servlet-mapping>
+  <filter>
+  	<filter-name>Cors</filter-name>
+  	<filter-class>com.revature.web.filters.CorsFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>Cors</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <servlet>
+  	<display-name>MasterServlet</display-name>
+  	<servlet-name>MasterServlet</servlet-name>
+  	<servlet-class>com.revature.web.MasterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>MasterServlet</servlet-name>
+	  <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
