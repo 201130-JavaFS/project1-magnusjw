@@ -5,37 +5,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+
         <title>Employee Reimbursement System</title>
     </head>
     <body>
-
         <div class="jumbotron text-center">
             <h1>Project 1 Revature</h1>
         </div>
 
         <h1 class="container">Progressing on the project.</h1>
         <p class="container">Lets do the front end and css, a rough sketch</p>
-
         <p class="container">Then lets create a postgresql script to create the databases that have already been made for us</p>
-
         <p class="container">Further instruction may be needed after these</p>
 
-        <form> <!-- Add Action -->
-            <div class="container">
+        <div class="container">
+
+            <div class="row" id="login-row">
+
                 <label for="userName">UserName:</label>
-                <input type="text" class="form-control" placeholder="Enter Username"> 
-            </div>
+                <input id="username" type="text" class="form-control" placeholder="Enter Username"> 
 
-            <div class="container">
                 <label for="passWord">Password:</label>
-                <input type="password" class="form-control" placeholder="Enter Password"> 
+                <input id="password" type="password" class="form-control" placeholder="Enter Password"> 
+                
+                <button id="loginBtn" class="d-flex justify-content-end btn btn-primary">Log In</button>
             </div>
-            
-            <button type="submit" class="btn btn-primary">Log In</button>
-         </form>
-
-
-        <script src=""></script> <!-- JS tag-->
+        </div>
+        
+        <script src="login.js"></script>
     </body>
-
 </html>

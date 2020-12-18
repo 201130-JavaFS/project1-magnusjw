@@ -1,18 +1,53 @@
 package com.revature.models;
 
-import java.sql.Blob;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="ERS_REIMBURSEMENT")
 public class Reimbursement {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="REIMB_ID")
 	private int id;
+	
+	@Column(name="REIMB_AMOUNT", nullable = false)
 	private double amount;
+	
+	@Column(name="REIMB_SUBMITTED", nullable = false)
 	private String submitted;
+	
+	@Column(name="REIMB_RESOLVED")
 	private String resolved;
+	
+	@Column(name="REIMB_DESCRIPTION")
 	private String description;
-	private Blob receipt;
+	
+	//question
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="ERS_USERS_ID")
 	private int authorId;
+	
+	//question
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="ERS_USERS_ID")
 	private int resolverId;
+	
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="REIMB_STATUS_ID")
 	private int statusId;
+	
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="REIMB_TYPE_ID")
 	private int typeId;
 	
 	public Reimbursement() {
@@ -29,7 +64,7 @@ public class Reimbursement {
 		this.typeId = typeId;
 	}
 
-	public Reimbursement(int id, double amount, String submitted, String resolved, String description, Blob receipt,
+	public Reimbursement(int id, double amount, String submitted, String resolved, String description,
 			int authorId, int resolverId, int statusId, int typeId) {
 		super();
 		this.id = id;
@@ -37,7 +72,6 @@ public class Reimbursement {
 		this.submitted = submitted;
 		this.resolved = resolved;
 		this.description = description;
-		this.receipt = receipt;
 		this.authorId = authorId;
 		this.resolverId = resolverId;
 		this.statusId = statusId;
@@ -92,7 +126,7 @@ public class Reimbursement {
 	@Override
 	public String toString() {
 		return "Reimbursement [id=" + id + ", amount=" + amount + ", submitted=" + submitted + ", resolved=" + resolved
-				+ ", description=" + description + ", receipt=" + receipt + ", authorId=" + authorId + ", resolverId="
+				+ ", description=" + description + ", authorId=" + authorId + ", resolverId="
 				+ resolverId + ", statusId=" + statusId + ", typeId=" + typeId + "]";
 	}
 
@@ -125,12 +159,6 @@ public class Reimbursement {
 	}
 	public void setDescription(String description) {
 		this.description = description;
-	}
-	public Blob getReceipt() {
-		return receipt;
-	}
-	public void setReceipt(Blob receipt) {
-		this.receipt = receipt;
 	}
 	public int getAuthorId() {
 		return authorId;

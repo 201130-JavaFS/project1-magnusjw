@@ -1,13 +1,42 @@
 package com.revature.models;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.Table;
+import javax.persistence.ManyToOne;
+
+@Entity
+@Table(name="ERS_USERS")
 public class User {
 	
-	private int id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="ERS_USERS_ID")
+	private int id; //Primary key
+	
+	@Column(name="ERS_USERNAME", nullable = false)
 	private String username;
+	
+	@Column(name="ERS_PASSWORD", nullable = false)
 	private String password;
+	
+	@Column(name="ERS_FIRST_NAME", nullable = false)
 	private String firstName;
+	
+	@Column(name="ERS_LAST_NAME", nullable = false)
 	private String lastName;
+	
+	@Column(name="ERS_EMAIL", nullable = false)
 	private String email;
+	
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="ERS_ROLE_ID")
 	private int roleId; // 1:Employee , 2:Finance Manager
 	
 	public User() {

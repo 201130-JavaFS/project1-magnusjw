@@ -18,10 +18,9 @@ public class LoginController {
 
 	public void login(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		if(req.getMethod().equals("POST")) {
+			
 			BufferedReader reader = req.getReader();
-			
 			StringBuilder sb = new StringBuilder();
-			
 			String line = reader.readLine();
 			
 			while(line != null) {
