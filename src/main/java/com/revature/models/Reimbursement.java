@@ -11,43 +11,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="ERS_REIMBURSEMENT")
 public class Reimbursement {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="REIMB_ID")
 	private int id;
-	
-	@Column(name="REIMB_AMOUNT", nullable = false)
 	private double amount;
-	
-	@Column(name="REIMB_SUBMITTED", nullable = false)
 	private String submitted;
-	
-	@Column(name="REIMB_RESOLVED")
 	private String resolved;
-	
-	@Column(name="REIMB_DESCRIPTION")
 	private String description;
-	
-	//question
-	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	@JoinColumn(name="ERS_USERS_ID")
 	private int authorId;
-	
-	//question
-	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	@JoinColumn(name="ERS_USERS_ID")
 	private int resolverId;
-	
-	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	@JoinColumn(name="REIMB_STATUS_ID")
 	private int statusId;
-	
-	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	@JoinColumn(name="REIMB_TYPE_ID")
 	private int typeId;
 	
 	public Reimbursement() {

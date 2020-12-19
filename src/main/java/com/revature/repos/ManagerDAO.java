@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.revature.models.Reimbursement;
 
-public interface FinanceDAO {
+public interface ManagerDAO {
 	
 	public void update(Reimbursement reimb);
 	public List<Reimbursement> viewAll();

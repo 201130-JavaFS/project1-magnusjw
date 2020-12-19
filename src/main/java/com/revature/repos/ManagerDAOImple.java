@@ -7,7 +7,7 @@ import org.hibernate.Session;
 import com.revature.models.Reimbursement;
 import com.revature.utils.HibernateUtility;
 
-public class FinanceDAOImple {
+public class ManagerDAOImple implements ManagerDAO{
 	
 	public void update(Reimbursement reimb) {
 		Session ses = HibernateUtility.getSession();

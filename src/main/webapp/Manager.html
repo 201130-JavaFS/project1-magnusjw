@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"/>
+
+        <title>Manager Page</title>
+    </head>
+    <body>
+
+        
+        <br/>
+        <br/>
+        <br/>
+        <!-- This is for searching a specific employee's tickets -->
+        <div class="container">
+
+            <input id="employee" type="text" class="col-sm-3 form-control" placeholder="Employee ID">
+            <button id="searchBtn" class="col-sm-2 btn btn-danger">Show Tickets</button>
+
+            <div class="row" id="table-row">
+                <table class="table table-hober table-bordered" id="avtable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Amount</th>
+                            <th>Time Submitted</th>
+                            <th>Time Resolved</th>
+                            <th>Description</th>
+                            <th>status</th>
+                            <th>type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <script></script>
+    </body>
+</html>

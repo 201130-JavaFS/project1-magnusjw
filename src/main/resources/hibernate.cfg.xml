@@ -13,15 +13,20 @@
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
 		<!-- Hibernate Properties -->
 		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-		<property name="hibernate.default_schema">hibernate</property>
+		<property name="hibernate.default_schema">public</property> <!-- Specific to ERS Project 1 -->
 		<!--  Hibernate console output -->
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<!-- DDL -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<!-- Create: Drops and recreates tables on launch -->
+		<!-- Update: Adds on to the previous existing tables, likely adding duplicates -->
 		
 		<!-- We will map our classes here -->
-		<mapping class="com.revature.models.Book"/>
-		<mapping class="com.revature.models.Author"/>
+		<mapping class="com.revature.models.User"/>
+		<mapping class="com.revature.models.UserRoles"/>
+		<mapping class="com.revature.models.Reimbursement"/>
+		<mapping class="com.revature.models.ReimbType"/>
+		<mapping class="com.revature.models.ReimbStatus"/>
 	</session-factory>
 </hibernate-configuration>

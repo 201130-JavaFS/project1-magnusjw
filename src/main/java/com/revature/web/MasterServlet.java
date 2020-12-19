@@ -9,11 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.revature.controllers.EmployeeController;
 import com.revature.controllers.LoginController;
+import com.revature.controllers.ManagerController;
 
 public class MasterServlet extends HttpServlet{
 	
 	private LoginController lc = new LoginController();
+	private EmployeeController ec = new EmployeeController();
+	private ManagerController mc = new ManagerController();
+	
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
@@ -36,8 +41,6 @@ public class MasterServlet extends HttpServlet{
 			}
 			break;
 		}
-		
-		
 	}
 	
 	@Override
@@ -49,64 +52,27 @@ public class MasterServlet extends HttpServlet{
 		
 		switch(URI) {
 		case "login":
+			
 			lc.login(req, res);
+			RequestDispatcher rd = null;
+			PrintWriter pw = res.getWriter();
+			
+			if(res.getStatus() == 200) {
+				rd = req.getRequestDispatcher("employee.html");
+				rd.forward(req, res);
+			} else {
+				rd = req.getRequestDispatcher("index.html");
+				rd.include(req, res);
+				pw.print("<span style='color:red; text-align:center;'>Invalid Username and/or Password</span>");
+			}
+			
 			break;
+		// case of second post method
 		}
 	}
 	
 	//res.sendRedirect("http://www.google.com");
-	
-	//loginservlet
-	/*
-	public class LoginServlet extends HttpServlet{
-		
-		@Override
-		protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-			String username = req.getParameter("userId");
-			String password = req.getParameter("password");
-			
-			RequestDispatcher rd = null;
-			PrintWriter pw = res.getWriter();
-			
-			//forwards
-			//rd.forward(request, response);
-			
-			//normally this logic would be in your service layer and get the password/user name from database
-			if(username.equals("CoolGuy") && password.equals("Monster")) {
-				//When getting request dispatcher I can state the relative path I want to forward to as a String Parameter
-				rd = req.getRequestDispatcher("success");
-				rd.forward(req, res);
-			} else {
-				rd = req.getRequestDispatcher("index.html");
-				rd.include(req, res);
-				pw.print("<span style='color:red; text-align:center;'>Invalid Username and/or Password</span>");
-			}
-		}
-		
-		@Override
-		protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-			String username = req.getParameter("userId");
-			String password = req.getParameter("password");
-			
-			RequestDispatcher rd = null;
-			PrintWriter pw = res.getWriter();
-			
-			//forwards
-			//rd.forward(request, response);
-			
-			//normally this logic would be in your service layer and get the password/user name from database
-			if(username.equals("CoolGuy") && password.equals("Monster")) {
-				//When getting request dispatcher I can state the relative path I want to forward to as a String Parameter
-				rd = req.getRequestDispatcher("success");
-				rd.forward(req, res);
-			} else {
-				rd = req.getRequestDispatcher("index.html");
-				rd.include(req, res);
-				pw.print("<span style='color:red; text-align:center;'>Invalid Username and/or Password</span>");
-			}
-		}
-		*/
-	
+
 	/* Success Servlet
 	//This is bad practice but it is possible and so I am showing it.	
 	@Override

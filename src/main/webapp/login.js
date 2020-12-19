@@ -1,6 +1,6 @@
 const url = 'http://localhost:8080/project-1/';
 
-document.getElementById("loginbtn").addEventListener('click', loginFunc);
+document.getElementById("loginBtn").addEventListener('click', loginFunc);
 
 async function loginFunc(){
     let usern = document.getElementById("username").value;
@@ -10,7 +10,7 @@ async function loginFunc(){
       username:usern,
       password:userp
     };
-  
+    
     let resp = await fetch(url+'login', {
       method:"POST",
       body: JSON.stringify(user),
