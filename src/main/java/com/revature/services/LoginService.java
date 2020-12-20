@@ -11,16 +11,16 @@ public class LoginService {
 	private static final Logger log = LogManager.getLogger(LoginService.class);
 	private LoginDAOImple lDao = new LoginDAOImple();
 	
-	public boolean login(String username, String password) {
+	public User login(String username, String password) {
 		
 		User user = lDao.findUser(username, password);
 		
 		if(user == null) {
-			System.out.println("service false");
-			return false;
+			log.info("User Not Found");
+			return null;
 		}
-		System.out.println("service true");
-		return true;
+		log.info("User Found!");
+		return user;
 	}
 
 }

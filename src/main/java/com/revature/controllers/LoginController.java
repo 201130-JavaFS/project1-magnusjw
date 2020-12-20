@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.services.LoginService;
 import com.revature.models.LoginDTO;
+import com.revature.models.User;
 
 public class LoginController {
 	
@@ -38,23 +39,27 @@ public class LoginController {
 			
 			LoginDTO loginDTO = om.readValue(body, LoginDTO.class);
 			
-			if(ls.login(loginDTO.username, loginDTO.password)) {
-				System.out.println("User Found");
+			User user = ls.login(loginDTO.username, loginDTO.password);
+			
+			if(user.getRoleId() != 0) {
+				log.info("User Found");
 				HttpSession ses = req.getSession();
 				
-				ses.setAttribute("user", loginDTO);//probably give it the login object if I had one
+				ses.setAttribute("user", user);
 				ses.setAttribute("loggedin", true);
 				
-				res.setStatus(200); //here
-				res.getWriter().print("Login Successful");
+				res.setStatus(200);
+				res.getWriter().print(user.getRoleId());
+				
+				log.info("User Role id is " + user.getRoleId());
 				
 			} else {
-				System.out.println("User Not Found");
+				log.info("User Not Found");
 				HttpSession ses = req.getSession(false);
 				if(ses != null) {
 					ses.invalidate();
 				}
-				res.setStatus(401);
+				res.setStatus(404); //This is returned when user not found
 			}
 		} else {
 			//Not a post request

@@ -34,11 +34,13 @@ public class LoginDAOImple {
 			
 			if(rs.next()) {
 				User u = new User();
+				u.setId(rs.getInt("userId"));
 				u.setUsername(username);
 				u.setPassword(password);
 				u.setFirstName(rs.getString("firstName"));
 				u.setLastName(rs.getString("lastName"));
 				u.setEmail(rs.getString("email"));
+				u.setRoleId(rs.getInt("roleId"));
 				
 				return u;
 			}

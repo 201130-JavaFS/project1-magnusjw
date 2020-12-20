@@ -9,19 +9,33 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous"/>
 
+        <link rel="stylesheet" href="style.css"/>
+
         <title>Employee Page</title>
     </head>
-    <body>
+    <body onload="onloadFunc()">
         <br/>
         <br/>
-        <div class="container-md">
+        <div id="user-destination"></div>
+        <div class="container">
+           
+            <input id="amount" class="col-sm-2" placeholder="Amount">
+            <label for="type">Type</label>
+            <select name="type" id="type" class="col-sm-2">
+                <option value="lodging">Lodging</option>
+                <option value="travel">Travel</option>
+                <option value="food">Food</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <button id="requestBtn" class="col-sm-2 btn btn-success">Submit Request!</button>
 
-            <button id="employeeBtn" class="col-sm-3 btn btn-dark">View Past/Pending Tickets</button>
-                <input id ="employeeId" class="col-sm-2" placeholder="Employee Id">
-            <button id="approveBtn" class="col-sm-1 btn btn-success">Approve</button>
+            <textarea id="description" class="col-sm-6" placeholder="Description"></textarea>
 
-            <br/>
-            <br/>
+            <div id="response-box"></div>
+
+            <button id="viewBtn" class="col-sm-3 btn btn-dark">View Past/Pending Tickets</button>
+
             <div class="row" id="table-row">
                 <table class="table table-hover table-bordered" id="avtable">
                     <thead>
@@ -33,8 +47,8 @@
                             <th>Description</th>
                             <th>Author</th>
                             <th>Resolver</th>
-                            <th>status</th>
-                            <th>type</th>
+                            <th>Status</th>
+                            <th>Type</th>
                         </tr>
                     </thead>
                     <tbody id="tbody"></tbody>
@@ -42,6 +56,6 @@
             </div>
         </div>
         
-        <script src="ers.js"></script>
+        <script src="emp.js"></script>
     </body>
 </html>

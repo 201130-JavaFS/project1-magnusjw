@@ -135,3 +135,284 @@
 2020-12-19 23:03:13 INFO  MasterServlet:80 - Master Servlet doPost Method
 2020-12-19 23:03:13 INFO  LoginController:26 - Login in LoginController
 2020-12-19 23:03:13 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:43:40 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-19 23:46:00 INFO  MasterServlet:81 - Master Servlet doPost Method
+2020-12-19 23:46:00 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:46:00 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:47:18 INFO  MasterServlet:81 - Master Servlet doPost Method
+2020-12-19 23:47:18 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:47:18 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:53:03 INFO  MasterServlet:83 - Master Servlet doPost Method
+2020-12-19 23:53:03 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:53:03 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:53:23 INFO  MasterServlet:83 - Master Servlet doPost Method
+2020-12-19 23:53:23 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:53:23 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:54:11 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-19 23:54:14 INFO  MasterServlet:83 - Master Servlet doPost Method
+2020-12-19 23:54:14 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:54:14 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:56:35 INFO  MasterServlet:79 - Master Servlet doPost Method
+2020-12-19 23:56:35 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:56:35 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-19 23:56:45 INFO  MasterServlet:79 - Master Servlet doPost Method
+2020-12-19 23:56:45 INFO  LoginController:26 - Login in LoginController
+2020-12-19 23:56:45 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 00:18:08 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 00:18:14 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 00:18:14 INFO  LoginController:26 - Login in LoginController
+2020-12-20 00:18:14 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 00:59:23 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 00:59:33 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 00:59:33 INFO  LoginController:26 - Login in LoginController
+2020-12-20 00:59:33 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 01:01:48 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 01:01:48 INFO  LoginController:26 - Login in LoginController
+2020-12-20 01:01:48 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 01:06:41 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 01:06:49 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 01:06:49 INFO  LoginController:26 - Login in LoginController
+2020-12-20 01:06:49 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 01:07:38 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 01:07:38 INFO  LoginController:26 - Login in LoginController
+2020-12-20 01:07:38 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 01:07:55 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 01:07:55 INFO  LoginController:26 - Login in LoginController
+2020-12-20 01:07:55 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 01:12:55 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 01:13:08 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 01:13:08 INFO  LoginController:26 - Login in LoginController
+2020-12-20 01:13:08 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 01:13:21 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 01:13:21 INFO  LoginController:26 - Login in LoginController
+2020-12-20 01:13:21 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:38:54 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 13:39:25 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:39:25 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:39:25 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:40:16 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:40:16 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:40:16 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:43:11 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:43:11 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:43:11 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:45:56 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:45:56 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:45:56 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:46:11 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:46:11 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:46:11 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:47:43 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:47:43 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:47:43 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:47:57 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 13:48:12 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:48:12 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:48:12 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:48:25 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:48:25 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:48:25 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:49:35 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 13:49:45 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:49:45 INFO  LoginController:26 - Login in LoginController
+2020-12-20 13:49:46 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:59:09 INFO  MasterServlet:37 - Master Servlet doGet Method
+2020-12-20 13:59:20 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:59:20 INFO  LoginController:27 - Login in LoginController
+2020-12-20 13:59:20 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:59:34 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:59:34 INFO  LoginController:27 - Login in LoginController
+2020-12-20 13:59:34 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 13:59:40 INFO  MasterServlet:90 - Master Servlet doPost Method
+2020-12-20 13:59:40 INFO  LoginController:27 - Login in LoginController
+2020-12-20 13:59:40 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:10:46 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 14:11:08 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:11:08 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:11:09 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:11:09 INFO  LoginService:22 - User Found!
+2020-12-20 14:11:09 INFO  LoginController:54 - User id is 2
+2020-12-20 14:11:09 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:16:20 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 14:16:56 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:16:56 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:16:56 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:16:56 INFO  LoginService:22 - User Found!
+2020-12-20 14:16:56 INFO  LoginController:54 - User id is 1
+2020-12-20 14:16:56 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:18:31 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:18:31 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:18:32 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:18:32 INFO  LoginService:19 - User Not Found
+2020-12-20 14:18:35 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:18:35 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:18:35 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:18:35 INFO  LoginService:19 - User Not Found
+2020-12-20 14:18:41 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:18:41 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:18:41 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:18:41 INFO  LoginService:22 - User Found!
+2020-12-20 14:18:41 INFO  LoginController:45 - User Found
+2020-12-20 14:18:41 INFO  LoginController:54 - User id is 2
+2020-12-20 14:18:41 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:19:01 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:19:01 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:19:01 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:19:01 INFO  LoginService:22 - User Found!
+2020-12-20 14:19:01 INFO  LoginController:45 - User Found
+2020-12-20 14:19:01 INFO  LoginController:54 - User id is 1
+2020-12-20 14:19:01 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:20:15 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:20:15 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:20:15 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:20:15 INFO  LoginService:22 - User Found!
+2020-12-20 14:20:15 INFO  LoginController:45 - User Found
+2020-12-20 14:20:15 INFO  LoginController:54 - User id is 1
+2020-12-20 14:20:15 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:23:49 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 14:23:59 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:23:59 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:23:59 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:23:59 INFO  LoginService:19 - User Not Found
+2020-12-20 14:24:08 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:24:08 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:24:08 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:24:08 INFO  LoginService:22 - User Found!
+2020-12-20 14:24:08 INFO  LoginController:45 - User Found
+2020-12-20 14:24:08 INFO  LoginController:54 - User id is 2
+2020-12-20 14:24:08 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:24:25 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:24:25 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:24:25 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:24:25 INFO  LoginService:22 - User Found!
+2020-12-20 14:24:25 INFO  LoginController:45 - User Found
+2020-12-20 14:24:25 INFO  LoginController:54 - User id is 1
+2020-12-20 14:24:25 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:25:05 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:25:05 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:25:05 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:25:05 INFO  LoginService:22 - User Found!
+2020-12-20 14:25:05 INFO  LoginController:45 - User Found
+2020-12-20 14:25:05 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:25:05 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:26:55 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 14:27:06 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:27:06 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:27:06 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:27:06 INFO  LoginService:22 - User Found!
+2020-12-20 14:27:06 INFO  LoginController:45 - User Found
+2020-12-20 14:27:06 INFO  LoginController:54 - User Role id is 2
+2020-12-20 14:27:06 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:27:53 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:27:53 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:27:53 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:27:53 INFO  LoginService:22 - User Found!
+2020-12-20 14:27:53 INFO  LoginController:45 - User Found
+2020-12-20 14:27:53 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:27:53 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:28:31 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:28:31 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:28:31 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:28:31 INFO  LoginService:22 - User Found!
+2020-12-20 14:28:31 INFO  LoginController:45 - User Found
+2020-12-20 14:28:31 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:28:31 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:28:43 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:28:43 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:28:43 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:28:43 INFO  LoginService:22 - User Found!
+2020-12-20 14:28:43 INFO  LoginController:45 - User Found
+2020-12-20 14:28:43 INFO  LoginController:54 - User Role id is 2
+2020-12-20 14:28:43 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:29:33 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:29:33 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:29:33 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:29:33 INFO  LoginService:22 - User Found!
+2020-12-20 14:29:33 INFO  LoginController:45 - User Found
+2020-12-20 14:29:33 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:29:33 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:29:53 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:29:53 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:29:53 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:29:53 INFO  LoginService:22 - User Found!
+2020-12-20 14:29:53 INFO  LoginController:45 - User Found
+2020-12-20 14:29:53 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:29:53 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:29:58 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:29:58 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:29:58 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:29:58 INFO  LoginService:22 - User Found!
+2020-12-20 14:29:58 INFO  LoginController:45 - User Found
+2020-12-20 14:29:58 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:29:58 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:30:43 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:30:43 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:30:43 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:30:43 INFO  LoginService:22 - User Found!
+2020-12-20 14:30:43 INFO  LoginController:45 - User Found
+2020-12-20 14:30:43 INFO  LoginController:54 - User Role id is 2
+2020-12-20 14:30:43 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:31:02 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:31:02 INFO  LoginController:27 - Login in LoginController
+2020-12-20 14:31:02 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 14:31:02 INFO  LoginService:22 - User Found!
+2020-12-20 14:31:02 INFO  LoginController:45 - User Found
+2020-12-20 14:31:02 INFO  LoginController:54 - User Role id is 1
+2020-12-20 14:31:02 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 14:57:12 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 14:57:17 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 15:11:14 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 15:11:16 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 15:11:23 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 15:11:38 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 15:12:26 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 15:12:28 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 15:28:53 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 15:28:53 INFO  LoginController:27 - Login in LoginController
+2020-12-20 15:28:53 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 15:28:53 INFO  LoginService:22 - User Found!
+2020-12-20 15:28:53 INFO  LoginController:45 - User Found
+2020-12-20 15:28:53 INFO  LoginController:54 - User Role id is 1
+2020-12-20 15:28:53 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 15:29:41 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 15:29:41 INFO  LoginController:27 - Login in LoginController
+2020-12-20 15:29:41 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 15:29:41 INFO  LoginService:22 - User Found!
+2020-12-20 15:29:41 INFO  LoginController:45 - User Found
+2020-12-20 15:29:41 INFO  LoginController:54 - User Role id is 1
+2020-12-20 15:29:41 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 15:29:57 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 15:29:57 INFO  LoginController:27 - Login in LoginController
+2020-12-20 15:29:57 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 15:29:57 INFO  LoginService:22 - User Found!
+2020-12-20 15:29:57 INFO  LoginController:45 - User Found
+2020-12-20 15:29:57 INFO  LoginController:54 - User Role id is 2
+2020-12-20 15:29:57 INFO  MasterServlet:89 - 200 Status code from Login
+2020-12-20 17:00:53 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:01 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:02 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:13 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 17:01:13 INFO  LoginController:27 - Login in LoginController
+2020-12-20 17:01:14 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 17:01:14 INFO  LoginService:22 - User Found!
+2020-12-20 17:01:14 INFO  LoginController:45 - User Found
+2020-12-20 17:01:14 INFO  LoginController:54 - User Role id is 1
+2020-12-20 17:01:14 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 17:01:16 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:16 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:01:17 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:17 INFO  ManagerDAOImple:133 - Viewing Pending Employee's Tickets
+2020-12-20 17:01:18 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:18 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:01:20 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:20 INFO  ManagerDAOImple:133 - Viewing Pending Employee's Tickets
+2020-12-20 17:01:40 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:40 INFO  ManagerDAOImple:133 - Viewing Pending Employee's Tickets
+2020-12-20 17:01:42 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:42 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:01:56 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:01:56 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:02:15 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:02:15 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:02:17 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:02:17 INFO  ManagerDAOImple:133 - Viewing Pending Employee's Tickets

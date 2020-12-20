@@ -11,8 +11,10 @@ async function loginFunc(){
     username:usern,
     password:userp
   };
+
+  localStorage["username"] = usern;
   
-  let resp = await fetch(url+'login', {
+  let response = await fetch(url+'login', {
     method:"POST",
     body: JSON.stringify(user),
     credentials:"include"
@@ -20,42 +22,21 @@ async function loginFunc(){
     //will also require this value in order to send the cookie back.
   });
 
-  if(resp.status===200){
-    location.replace("manager.html");
+  if(response.status===200){  
+    let data = await response.json(); //This is the res body
+
+    console.log(data);
+
+    if(data == 1){
+      window.alert("test1");
+      location.replace("employee.html");
+    }
+
+    if(data == 2)
+      window.alert("test2");
+      location.replace("manager.html");
+      
   }else{
     document.getElementById("login-row").innerText="Login Failed!";
   }
 }
-
-//Manger Page JS
-document.getElementById("pendingBtn").addEventListener('click', pendingTicketsFunc);
-document.getElementById("everyBtn").addEventListener('click', everyTicketFunc);
-document.getElementById("approveBtn").addEventListener('click', approveFunc);
-document.getElementById("rejectBtn").addEventListener('click', rejectFunc);
-
-
-async function pendingTicketsFunc(){
-  let resp = await fetch(url+'login', {
-    method:"GET",
-    body: JSON.stringify(), //Would I manage my current user id in javascript??
-    credentials:"include"
-  });
-}
-async function everyTicketFunc(){
-  let resp = await fetch(url+'login', {
-    method:"GET",
-    body: JSON.stringify(), 
-    credentials:"include"
-  });
-}
-async function approveFunc(){
-
-}
-async function rejectFunc(){
-  
-}
-
-//Employee Page JS
-document.getElementById("pendingBtn").addEventListener('click', pendingTickets);
-document.getElementById("pendingBtn").addEventListener('click', pendingTickets);
-

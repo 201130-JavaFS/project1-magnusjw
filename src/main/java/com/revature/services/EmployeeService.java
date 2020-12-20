@@ -1,5 +1,7 @@
 package com.revature.services;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,9 +19,10 @@ public class EmployeeService {
 		eDao.addRequest(reimb);
 	}
 	
-	public void viewTickets(int id) {
+	public List<Reimbursement> viewTickets(int id) {
 		
-		eDao.viewTickets(id);
+		List<Reimbursement> list = eDao.viewTickets(id);
+		
+		return list;
 	}
-
 }

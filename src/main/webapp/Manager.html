@@ -9,14 +9,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous"/>
 
+        <link rel="stylesheet" href="style.css"/>
+
         <title>Manager Page</title>
     </head>
-    <body>
+    <body onload="onloadFunc()">
         <br/>
         <br/>
+        <div id="user-destination"></div>
         <div class="container">
 
-            <button id="pendingBtn" class="col-sm-3 btn btn-dark">Show All Pending Tickets</button>
+            <button id="pendingbtn" class="col-sm-3 btn btn-dark">Show All Pending Tickets</button>
             <button id="everyBtn"   class="col-sm-3 btn btn-dark">Show Every Ticket Ever</button>
 
             <input id ="reimbId" class="col-sm-2" placeholder="Ticket Id">
@@ -37,8 +40,8 @@
                             <th>Description</th>
                             <th>Author</th>
                             <th>Resolver</th>
-                            <th>status</th>
-                            <th>type</th>
+                            <th>Status</th>
+                            <th>Type</th>
                         </tr>
                     </thead>
                     <tbody id="tbody"></tbody>
@@ -46,6 +49,6 @@
             </div>
         </div>
         
-        <script src="ers.js"></script>
+        <script src="man.js"></script>
     </body>
 </html>
