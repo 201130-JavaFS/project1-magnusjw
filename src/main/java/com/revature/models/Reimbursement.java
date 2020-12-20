@@ -1,22 +1,13 @@
 package com.revature.models;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import java.sql.Date;
 
 public class Reimbursement {
 	
 	private int id;
 	private double amount;
-	private String submitted;
-	private String resolved;
+	private Date submitted;
+	private Date resolved;
 	private String description;
 	private int authorId;
 	private int resolverId;
@@ -26,31 +17,28 @@ public class Reimbursement {
 	public Reimbursement() {
 		super();
 	}
-
-	public Reimbursement(double amount, String submitted, int authorId, int resolverId, int statusId, int typeId) {
-		super();
-		this.amount = amount;
-		this.submitted = submitted;
-		this.authorId = authorId;
-		this.resolverId = resolverId;
-		this.statusId = statusId;
-		this.typeId = typeId;
-	}
-
-	public Reimbursement(int id, double amount, String submitted, String resolved, String description,
-			int authorId, int resolverId, int statusId, int typeId) {
+	
+	public Reimbursement(int id, double amount, Date submitted, String description, int authorId, int statusId, int typeId) {
 		super();
 		this.id = id;
 		this.amount = amount;
 		this.submitted = submitted;
-		this.resolved = resolved;
 		this.description = description;
 		this.authorId = authorId;
-		this.resolverId = resolverId;
 		this.statusId = statusId;
 		this.typeId = typeId;
 	}
-
+	
+	public Reimbursement(double amount, Date submitted, String description, int authorId, int statusId, int typeId) {
+		super();
+		this.amount = amount;
+		this.submitted = submitted;
+		this.description = description;
+		this.authorId = authorId;
+		this.statusId = statusId;
+		this.typeId = typeId;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -59,14 +47,16 @@ public class Reimbursement {
 		temp = Double.doubleToLongBits(amount);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + authorId;
+		result = prime * result + ((description == null) ? 0 : description.hashCode());
 		result = prime * result + id;
+		result = prime * result + ((resolved == null) ? 0 : resolved.hashCode());
 		result = prime * result + resolverId;
 		result = prime * result + statusId;
 		result = prime * result + ((submitted == null) ? 0 : submitted.hashCode());
 		result = prime * result + typeId;
 		return result;
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -80,7 +70,17 @@ public class Reimbursement {
 			return false;
 		if (authorId != other.authorId)
 			return false;
+		if (description == null) {
+			if (other.description != null)
+				return false;
+		} else if (!description.equals(other.description))
+			return false;
 		if (id != other.id)
+			return false;
+		if (resolved == null) {
+			if (other.resolved != null)
+				return false;
+		} else if (!resolved.equals(other.resolved))
 			return false;
 		if (resolverId != other.resolverId)
 			return false;
@@ -95,14 +95,14 @@ public class Reimbursement {
 			return false;
 		return true;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Reimbursement [id=" + id + ", amount=" + amount + ", submitted=" + submitted + ", resolved=" + resolved
-				+ ", description=" + description + ", authorId=" + authorId + ", resolverId="
-				+ resolverId + ", statusId=" + statusId + ", typeId=" + typeId + "]";
+				+ ", description=" + description + ", authorId=" + authorId + ", resolverId=" + resolverId
+				+ ", statusId=" + statusId + ", typeId=" + typeId + "]";
 	}
-
+	
 	public int getId() {
 		return id;
 	}
@@ -115,16 +115,16 @@ public class Reimbursement {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	public String getSubmitted() {
+	public Date getSubmitted() {
 		return submitted;
 	}
-	public void setSubmitted(String submitted) {
+	public void setSubmitted(Date submitted) {
 		this.submitted = submitted;
 	}
-	public String getResolved() {
+	public Date getResolved() {
 		return resolved;
 	}
-	public void setResolved(String resolved) {
+	public void setResolved(Date resolved) {
 		this.resolved = resolved;
 	}
 	public String getDescription() {

@@ -1,32 +1,25 @@
 package com.revature.services;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.models.User;
 import com.revature.repos.LoginDAOImple;
 
 public class LoginService {
-
-	//check if the entered credentials are within the database
 	
+	private static final Logger log = LogManager.getLogger(LoginService.class);
 	private LoginDAOImple lDao = new LoginDAOImple();
 	
 	public boolean login(String username, String password) {
 		
-		System.out.println("test1");
+		User user = lDao.findUser(username, password);
 		
-		User user = lDao.findByUsername(username);
-		
-		System.out.println("test2");
-		
-		//How can I get this user information back to somewhere important
-		
-		if(!user.equals(null)) {//User not found in first place
-			return false;
-		} else if(!user.getPassword().equals(password)) { //Password is incorrect for this username
+		if(user == null) {
+			System.out.println("service false");
 			return false;
 		}
-		
-		System.out.println("test7");
-		
+		System.out.println("service true");
 		return true;
 	}
 

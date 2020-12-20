@@ -12,26 +12,31 @@
         <title>Manager Page</title>
     </head>
     <body>
-
-        
         <br/>
         <br/>
-        <br/>
-        <!-- This is for searching a specific employee's tickets -->
         <div class="container">
 
-            <input id="employee" type="text" class="col-sm-3 form-control" placeholder="Employee ID">
-            <button id="searchBtn" class="col-sm-2 btn btn-danger">Show Tickets</button>
+            <button id="pendingBtn" class="col-sm-3 btn btn-dark">Show All Pending Tickets</button>
+            <button id="everyBtn"   class="col-sm-3 btn btn-dark">Show Every Ticket Ever</button>
 
+            <input id ="reimbId" class="col-sm-2" placeholder="Ticket Id">
+                
+            <button id="approveBtn" class="col-sm-1 btn btn-success">Approve</button>
+            <button id="rejectBtn"  class="col-sm-1 btn btn-danger" >Reject</button>
+
+            <br/>
+            <br/>
             <div class="row" id="table-row">
-                <table class="table table-hober table-bordered" id="avtable">
+                <table class="table table-hover table-bordered" id="avtable">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>Ticket ID</th>
                             <th>Amount</th>
                             <th>Time Submitted</th>
                             <th>Time Resolved</th>
                             <th>Description</th>
+                            <th>Author</th>
+                            <th>Resolver</th>
                             <th>status</th>
                             <th>type</th>
                         </tr>
@@ -41,6 +46,6 @@
             </div>
         </div>
         
-        <script></script>
+        <script src="ers.js"></script>
     </body>
 </html>

@@ -1,31 +1,129 @@
 package com.revature.repos;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.Session;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.revature.models.Reimbursement;
-import com.revature.utils.HibernateUtility;
+import com.revature.utils.ConnectionUtil;
 
-public class ManagerDAOImple implements ManagerDAO{
+public class ManagerDAOImple{
 	
-	public void update(Reimbursement reimb) {
-		Session ses = HibernateUtility.getSession();
-		
-		ses.merge(reimb);
-	}
-	/*
-	 * Approve/Reject
-	public void reject(Reimbursement reimb) {
-		Session ses = HibernateUtility.getSession();
-	}
-	*/
+	private static final Logger log = LogManager.getLogger(ManagerDAOImple.class);
+	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
 	
-	public List<Reimbursement> viewAll() {
-		Session ses = HibernateUtility.getSession();
+	public void acceptTicket(int reimbId) {
 		
-		List<Reimbursement> list = ses.createQuery("FROM ERS_REIMBURSEMENT").list();
+		Connection conn = cu.getConnection();
+		log.info("Accepting ticket #" + reimbId);
 		
-		return list;
+		try {
+			String sql = "select * from \"Ers_Reimbursements\" where \"reimbId\" = ?;";
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, reimbId);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			int status = 0; //Should never be 0
+			
+			if(rs.next()) {
+				status = rs.getInt("reimbStatusId");
+				if(status == 1) {// If pending
+					status = 2; // Change to accepted
+				}
+			}
+			
+			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbStatusId\" = ? and \"reimbResolved\" = ? and \"reimbResolver\" = ? where \"reimbId\" = ?;";
+			
+			PreparedStatement ps2 = conn.prepareStatement(sql2);
+			ps2.setInt(1, status);
+			ps2.setInt(2, reimbId);
+			ps2.setInt(2, reimbId);
+			ps2.setInt(2, reimbId);
+			
+			ps2.executeUpdate();
+			
+			
+		} catch(SQLException e) {
+			System.out.println("ManagerDAO SQL error");
+		}
+	}
+	
+	public void rejectTicket(int reimbId) {
+		
+		Connection conn = cu.getConnection();
+		log.info("Rejecting ticket #" + reimbId);
+		
+		try {
+			String sql = "select * from \"Ers_Reimbursements\" where \"reimbId\" = ?;";
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, reimbId);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			int status = 0; //Should never be 0
+			
+			if(rs.next()) {
+				status = rs.getInt("reimbStatusId");
+				if(status == 1) {// If pending
+					status = 3; // Change to rejected
+				}
+			}
+			
+			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbStatusId\" = ? where \"reimbId\" = ?;";
+			
+			PreparedStatement ps2 = conn.prepareStatement(sql2);
+			ps2.setInt(1, status);
+			ps2.setInt(2, reimbId);
+			
+			ps2.executeUpdate();
+			
+		} catch(SQLException e) {
+			System.out.println("ManagerDAO SQL error");
+		}
+	}
+	
+	public List<Reimbursement> viewAllTickets() {
+		
+		Connection conn = cu.getConnection();
+		log.info("Viewing All Employee's Tickets");
+		
+		try {
+			
+			String sql = "select * from \"Ers_Reimbursements\";";
+			
+			Statement s = conn.createStatement();
+			
+			ResultSet rs = s.executeQuery(sql);
+			
+			List<Reimbursement> list = new ArrayList<Reimbursement>();
+
+			while(rs.next()) {
+				Reimbursement r = new Reimbursement();
+				r.setId(rs.getInt("reimbId"));
+				r.setAmount(rs.getDouble("reimbAmount"));
+				r.setSubmitted(rs.getDate("reimbSubmitted"));
+				r.setDescription(rs.getString("reimbDescription"));
+				r.setAuthorId(rs.getInt("reimbAuthor"));
+				r.setStatusId(rs.getInt("reimbStatusId"));
+				r.setTypeId(rs.getInt("reimbTypeId"));
+
+				list.add(r);
+			}
+			return list;
+			
+		} catch(SQLException e) {
+			System.out.println("ManagerDAO SQL error");
+		}
+		return null; // Empty site huh
 	}
 }

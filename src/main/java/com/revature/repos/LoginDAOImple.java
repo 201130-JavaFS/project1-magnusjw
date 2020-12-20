@@ -1,31 +1,50 @@
 package com.revature.repos;
 
-import java.util.List;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-import javax.persistence.Query;
-
-import org.hibernate.Session;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.revature.models.User;
-import com.revature.utils.HibernateUtility;
+import com.revature.utils.ConnectionUtil;
 
 public class LoginDAOImple {
 	
-	public User findByUsername(String username) {
+	private static final Logger log = LogManager.getLogger(LoginDAOImple.class);
+	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
+
+	
+	public User findUser(String username, String password) {
 		
-		System.out.println("test1.5");
-		Session ses = HibernateUtility.getSession();
+		log.info("findUser in LoginDAOImple");
 		
+		Connection conn = cu.getConnection();
 		
-		System.out.println("test2.5");
-		
-		String hql = "FROM ERS_USERS WHERE ERS_USERNAME = " + username;
-		Query q = ses.createQuery(hql);
-		
-		List<User> results = q.getResultList();
-		
-		User user = results.get(0);
-		
-		return user;
+		try {
+			
+			PreparedStatement ps = conn.prepareStatement("select * from \"Ers_Users\" where \"username\" = ? and \"password\" = ?;");
+			
+			ps.setString(1, username);
+			ps.setString(2, password);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			if(rs.next()) {
+				User u = new User();
+				u.setUsername(username);
+				u.setPassword(password);
+				u.setFirstName(rs.getString("firstName"));
+				u.setLastName(rs.getString("lastName"));
+				u.setEmail(rs.getString("email"));
+				
+				return u;
+			}
+		} catch(SQLException e) {
+			System.out.println("LoginDAO SQL error");
+		}
+		return null; //If user is not found
 	}
 }

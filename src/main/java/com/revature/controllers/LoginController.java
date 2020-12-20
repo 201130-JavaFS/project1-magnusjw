@@ -13,20 +13,17 @@ import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.services.LoginService;
 import com.revature.models.LoginDTO;
-import com.revature.repos.EmployeeDAOImple;
 
 public class LoginController {
 	
-	private static final Logger log = LogManager.getLogger(EmployeeDAOImple.class);
+	private static final Logger log = LogManager.getLogger(LoginController.class);
 	private ObjectMapper om = new ObjectMapper();
 	private LoginService ls = new LoginService();
 
 	public void login(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		if(req.getMethod().equals("POST")) {
 			
-			log.info("I'm using the Login method in LoginController");
-			
-			System.out.println("test3");
+			log.info("Login in LoginController");
 			
 			BufferedReader reader = req.getReader();
 			StringBuilder sb = new StringBuilder();
@@ -37,14 +34,12 @@ public class LoginController {
 				line = reader.readLine();
 			}
 			
-			System.out.println("test4");
 			String body = new String(sb);
 			
 			LoginDTO loginDTO = om.readValue(body, LoginDTO.class);
 			
-			System.out.println("test5");
-			
 			if(ls.login(loginDTO.username, loginDTO.password)) {
+				System.out.println("User Found");
 				HttpSession ses = req.getSession();
 				
 				ses.setAttribute("user", loginDTO);//probably give it the login object if I had one
@@ -52,7 +47,9 @@ public class LoginController {
 				
 				res.setStatus(200); //here
 				res.getWriter().print("Login Successful");
+				
 			} else {
+				System.out.println("User Not Found");
 				HttpSession ses = req.getSession(false);
 				if(ses != null) {
 					ses.invalidate();
