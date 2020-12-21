@@ -6,6 +6,7 @@ document.getElementById("requestBtn").addEventListener('click', addRequestFunc);
 
 async function onloadFunc(){
     document.getElementById("user-destination").innerText=localStorage["username"];
+    document.getElementById("type").value = "";
 }
 
 async function viewTicketsFunc(){
@@ -18,6 +19,8 @@ async function viewTicketsFunc(){
 
   if(response.status===200){
     let data = await response.json(); //This is the res body
+
+    document.getElementById("tbody").innerHTML = "";
 
     for(let ticket of data){
         console.log(ticket);
@@ -49,7 +52,11 @@ async function viewTicketsFunc(){
         row.appendChild(cell6);
 
         let cell7 = document.createElement("td");
-        cell7.innerHTML = ticket.resolverId;
+        if(ticket.resolverId == 0){
+            cell7.innerHTML = "";   
+        } else{
+            cell7.innerHTML = ticket.resolverId;
+        }
         row.appendChild(cell7);
 
         let cell8 = document.createElement("td");
@@ -76,6 +83,8 @@ async function viewTicketsFunc(){
 
         document.getElementById("tbody").appendChild(row);
     }
+  } else {
+        document.getElementById("info").innerText="No Entries";
   }
 }
 
@@ -84,16 +93,33 @@ async function addRequestFunc(){
     console.log("request");
 
     let a = document.getElementById("amount").value;
-    let t = document.getElementById("type").value;
+    let ta = document.getElementById("type").value;
     let d = document.getElementById("description").value;
+
+    document.getElementById("amount").value = "";
+    document.getElementById("type").value = "";
+    document.getElementById("description").value = "";
+
+    let t;
+    console.log(ta);
+
+    if(ta == "lodging"){
+        t = 1;
+    } else if(ta == "travel") {
+        t = 2;
+    } else if(ta == "food") {
+        t = 3;
+    } else {
+        t = 4;
+    }
+
+    console.log(t);
 
     let info = {
         amount:a,
-        type:t,
+        typeId:t,
         description:d
     };
-
-  
 
     let response = await fetch(url+'request', {
     method:"POST",
@@ -102,10 +128,9 @@ async function addRequestFunc(){
   });
 
   if(response.status===200){
-    let data = await response.json(); //This is the res body
+    document.getElementById("info").innerText="Success!";
 
   }else{
-    document.getElementById("response-box").innerText="Failed Request";
-
+    document.getElementById("info").innerText="Failed Request";
   }
 }

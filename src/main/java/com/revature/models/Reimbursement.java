@@ -1,15 +1,11 @@
 package com.revature.models;
 
-import java.sql.Date;
-
 public class Reimbursement {
-	
-	//java.time.LocalDateTime class
 	
 	private int id;
 	private double amount;
-	private Date submitted;
-	private Date resolved;
+	private String submitted;
+	private String resolved;
 	private String description;
 	private int authorId;
 	private int resolverId;
@@ -19,28 +15,34 @@ public class Reimbursement {
 	public Reimbursement() {
 		super();
 	}
-	
-	public Reimbursement(int id, double amount, Date submitted, String description, int authorId, int statusId, int typeId) {
+
+	public Reimbursement(double amount, String submitted, String resolved, String description, int authorId,
+			int resolverId, int statusId, int typeId) {
+		super();
+		this.amount = amount;
+		this.submitted = submitted;
+		this.resolved = resolved;
+		this.description = description;
+		this.authorId = authorId;
+		this.resolverId = resolverId;
+		this.statusId = statusId;
+		this.typeId = typeId;
+	}
+
+	public Reimbursement(int id, double amount, String submitted, String resolved, String description, int authorId,
+			int resolverId, int statusId, int typeId) {
 		super();
 		this.id = id;
 		this.amount = amount;
 		this.submitted = submitted;
+		this.resolved = resolved;
 		this.description = description;
 		this.authorId = authorId;
+		this.resolverId = resolverId;
 		this.statusId = statusId;
 		this.typeId = typeId;
 	}
-	
-	public Reimbursement(double amount, Date submitted, String description, int authorId, int statusId, int typeId) {
-		super();
-		this.amount = amount;
-		this.submitted = submitted;
-		this.description = description;
-		this.authorId = authorId;
-		this.statusId = statusId;
-		this.typeId = typeId;
-	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -58,7 +60,7 @@ public class Reimbursement {
 		result = prime * result + typeId;
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -97,14 +99,14 @@ public class Reimbursement {
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Reimbursement [id=" + id + ", amount=" + amount + ", submitted=" + submitted + ", resolved=" + resolved
 				+ ", description=" + description + ", authorId=" + authorId + ", resolverId=" + resolverId
 				+ ", statusId=" + statusId + ", typeId=" + typeId + "]";
 	}
-	
+
 	public int getId() {
 		return id;
 	}
@@ -117,16 +119,17 @@ public class Reimbursement {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	public Date getSubmitted() {
+
+	public String getSubmitted() {
 		return submitted;
 	}
-	public void setSubmitted(Date submitted) {
+	public void setSubmitted(String submitted) {
 		this.submitted = submitted;
 	}
-	public Date getResolved() {
+	public String getResolved() {
 		return resolved;
 	}
-	public void setResolved(Date resolved) {
+	public void setResolved(String resolved) {
 		this.resolved = resolved;
 	}
 	public String getDescription() {

@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,7 @@ public class ManagerDAOImple{
 	
 	private static final Logger log = LogManager.getLogger(ManagerDAOImple.class);
 	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
+	SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 	
 	public boolean acceptTicket(int reimbId, int userId) {
 		
@@ -45,8 +47,6 @@ public class ManagerDAOImple{
 				log.info("Ticket not found, bad ticket id input");
 				return false;
 			}
-			
-			//If ticket is pending, we get here
 			
 			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbResolved\" = ?, \"reimbResolver\" = ?, \"reimbStatusId\" = 2  where \"reimbId\" = ?;";
 			
@@ -89,9 +89,7 @@ public class ManagerDAOImple{
 				log.info("Ticket not found, bad ticket id input");
 				return false;
 			}
-			
-			//If ticket is pending, we get here
-			
+
 			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbResolved\" = ?, \"reimbResolver\" = ?, \"reimbStatusId\" = 3  where \"reimbId\" = ?;";
 			
 			PreparedStatement ps2 = conn.prepareStatement(sql2);
@@ -128,8 +126,21 @@ public class ManagerDAOImple{
 				Reimbursement r = new Reimbursement();
 				r.setId(rs.getInt("reimbId"));
 				r.setAmount(rs.getDouble("reimbAmount"));
-				r.setSubmitted(rs.getDate("reimbSubmitted"));
-				r.setResolved(rs.getDate("reimbResolved"));
+				
+				Timestamp submitted = rs.getTimestamp("reimbSubmitted");
+				String strSubmitted = dateFormat.format(submitted);
+				r.setSubmitted(strSubmitted);
+				
+				Timestamp resolved = rs.getTimestamp("reimbResolved");
+				String strResolved;
+				
+				if(resolved == null) {
+					strResolved = "";
+				} else {
+					strResolved = dateFormat.format(resolved);
+				}
+
+				r.setResolved(strResolved);
 				r.setDescription(rs.getString("reimbDescription"));
 				r.setAuthorId(rs.getInt("reimbAuthor"));
 				r.setResolverId(rs.getInt("reimbResolver"));
@@ -165,8 +176,23 @@ public class ManagerDAOImple{
 				Reimbursement r = new Reimbursement();
 				r.setId(rs.getInt("reimbId"));
 				r.setAmount(rs.getDouble("reimbAmount"));
-				r.setSubmitted(rs.getDate("reimbSubmitted"));
-				r.setResolved(rs.getDate("reimbResolved"));
+				
+				Timestamp submitted = rs.getTimestamp("reimbSubmitted");
+				LocalDateTime strSubmitted = submitted.toLocalDateTime();
+				String str = strSubmitted.toString();
+				//String strSubmitted = dateFormat.format(submitted);
+				r.setSubmitted(str);
+				
+				Timestamp resolved = rs.getTimestamp("reimbResolved");
+				String strResolved;
+				
+				if(resolved == null) {
+					strResolved = "";
+				} else {
+					strResolved = dateFormat.format(resolved);
+				}
+
+				r.setResolved(strResolved);
 				r.setDescription(rs.getString("reimbDescription"));
 				r.setAuthorId(rs.getInt("reimbAuthor"));
 				r.setResolverId(rs.getInt("reimbResolver"));

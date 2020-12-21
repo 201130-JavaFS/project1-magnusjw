@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +20,9 @@ public class EmployeeDAOImple{
 	
 	private static final Logger log = LogManager.getLogger(EmployeeDAOImple.class);
 	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
+	SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 
-	public void addRequest(Reimbursement reimb) {
+	public boolean addRequest(Reimbursement reimb) {
 		
 		Connection conn = cu.getConnection();
 		log.info("I'm adding request " + reimb.getId() + " using EmployeeDAO");
@@ -30,18 +32,21 @@ public class EmployeeDAOImple{
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
-			ps.setTimestamp(3, Timestamp.valueOf(LocalDateTime.now()));
-			
 			ps.setDouble(1, reimb.getAmount());
-			ps.setDate(2, reimb.getSubmitted());
+			ps.setTimestamp(2, Timestamp.valueOf(LocalDateTime.now()));
 			ps.setString(3, reimb.getDescription());
 			ps.setInt(4, reimb.getAuthorId());
 			ps.setInt(5,reimb.getStatusId());
 			ps.setInt(6, reimb.getTypeId());
+			
 			ps.executeUpdate();
+			
+			return true;
 		} catch(SQLException e) {
 			System.out.println("EmployeeDAO SQL error");
 		}
+		
+		return false;
 	}
 	
 	public List<Reimbursement> viewTickets(int id) {
@@ -64,12 +69,27 @@ public class EmployeeDAOImple{
 				Reimbursement r = new Reimbursement();
 				r.setId(rs.getInt("reimbId"));
 				r.setAmount(rs.getDouble("reimbAmount"));
-				r.setSubmitted(rs.getDate("reimbSubmitted"));
+				
+				Timestamp submitted = rs.getTimestamp("reimbSubmitted");
+				String strSubmitted = dateFormat.format(submitted);
+				r.setSubmitted(strSubmitted);
+				
+				Timestamp resolved = rs.getTimestamp("reimbResolved");
+				String strResolved;
+				
+				if(resolved == null) {
+					strResolved = "";
+				} else {
+					strResolved = dateFormat.format(resolved);
+				}
+
+				r.setResolved(strResolved);
 				r.setDescription(rs.getString("reimbDescription"));
 				r.setAuthorId(rs.getInt("reimbAuthor"));
+				r.setResolverId(rs.getInt("reimbResolver"));
 				r.setStatusId(rs.getInt("reimbStatusId"));
 				r.setTypeId(rs.getInt("reimbTypeId"));
-				
+
 				list.add(r);
 			}
 			

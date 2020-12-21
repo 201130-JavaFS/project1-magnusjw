@@ -22,6 +22,12 @@ async function pendingTicketsFunc(){
     let data = await response.json(); //This is the res body
 
     document.getElementById("tbody").innerHTML = "";
+
+    console.log(data);
+
+    if(data == ""){
+        document.getElementById("info").innerText = "No Entries";
+    }
     
     for(let ticket of data){
         console.log(ticket);
@@ -36,11 +42,11 @@ async function pendingTicketsFunc(){
         cell2.innerHTML = ticket.amount;
         row.appendChild(cell2);
 
-        let cell3 = document.createElement("td"); //Needs work
+        let cell3 = document.createElement("td");
         cell3.innerHTML = ticket.submitted;
         row.appendChild(cell3);
 
-        let cell4 = document.createElement("td"); //Needs work
+        let cell4 = document.createElement("td");
         cell4.innerHTML = ticket.resolved;
         row.appendChild(cell4);
 
@@ -53,7 +59,11 @@ async function pendingTicketsFunc(){
         row.appendChild(cell6);
 
         let cell7 = document.createElement("td");
-        cell7.innerHTML = ticket.resolverId;
+        if(ticket.resolverId == 0){
+            cell7.innerHTML = "";
+        } else{
+            cell7.innerHTML = ticket.resolverId;
+        }
         row.appendChild(cell7);
 
         let cell8 = document.createElement("td");
@@ -88,13 +98,19 @@ async function everyTicketFunc(){
   console.log("every");
   let response = await fetch(url+'viewAll', {
   method:"GET",
-  credentials:"include" //Is this necessary when a cookie does not matter
+  credentials:"include"
   });
 
   if(response.status===200){
     let data = await response.json(); //This is the res body
 
     document.getElementById("tbody").innerHTML = "";
+
+    if(data == ""){
+        document.getElementById("info").innerText = "No Entries";
+    }
+
+    console.log(data.resolverId);
 
     for(let ticket of data){
         console.log(ticket);
@@ -109,11 +125,11 @@ async function everyTicketFunc(){
         cell2.innerHTML = ticket.amount;
         row.appendChild(cell2);
 
-        let cell3 = document.createElement("td"); //Needs work
+        let cell3 = document.createElement("td");
         cell3.innerHTML = ticket.submitted;
         row.appendChild(cell3);
 
-        let cell4 = document.createElement("td"); //Needs work
+        let cell4 = document.createElement("td");
         cell4.innerHTML = ticket.resolved;
         row.appendChild(cell4);
 
@@ -126,7 +142,11 @@ async function everyTicketFunc(){
         row.appendChild(cell6);
 
         let cell7 = document.createElement("td");
-        cell7.innerHTML = ticket.resolverId;
+        if(ticket.resolverId == 0){
+            cell7.innerHTML = "";
+        } else{
+            cell7.innerHTML = ticket.resolverId;
+        }
         row.appendChild(cell7);
 
         let cell8 = document.createElement("td");

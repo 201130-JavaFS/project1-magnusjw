@@ -92,7 +92,6 @@ public class MasterServlet extends HttpServlet{
 				break;
 				
 			case "request":
-				
 				if(req.getSession(false)!=null) {
 					ec.request(req, res);
 					

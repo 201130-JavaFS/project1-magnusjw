@@ -1,5 +1,6 @@
 package com.revature.controllers;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.List;
 
@@ -33,11 +34,30 @@ public class EmployeeController {
 	}
 	
 	
-	public void request(HttpServletRequest req, HttpServletResponse res) {
+	public void request(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		HttpSession ses = req.getSession(false);
 		User user = (User)ses.getAttribute("user");
 		
+		BufferedReader reader = req.getReader();
+		StringBuilder sb = new StringBuilder();
+		String line = reader.readLine();
 		
+		while(line != null) {
+			sb.append(line);
+			line = reader.readLine();
+		}
+		
+		String body = new String(sb);
+		
+		Reimbursement r = om.readValue(body, Reimbursement.class);
+			
+		r.setAuthorId(user.getId());
+		r.setStatusId(1);
+		
+		System.out.println(r);
+		
+		es.request(r);
+
 		res.setStatus(200);
 	}
 }

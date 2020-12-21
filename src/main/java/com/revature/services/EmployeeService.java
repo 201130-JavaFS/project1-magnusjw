@@ -14,9 +14,14 @@ public class EmployeeService {
 	private EmployeeDAOImple eDao = new EmployeeDAOImple();
 	
 	
-	public void request(Reimbursement reimb) {
+	public boolean request(Reimbursement reimb) {
+		
+		if(reimb.getAmount() < 0) {
+			return false;
+		}
 		
 		eDao.addRequest(reimb);
+		return true;
 	}
 	
 	public List<Reimbursement> viewTickets(int id) {

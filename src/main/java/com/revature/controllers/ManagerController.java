@@ -45,7 +45,7 @@ public class ManagerController {
 		if(ms.accept(idDTO.reimbId, user.getId())) {
 			res.setStatus(200);
 		} else {
-			res.setStatus(400);
+			res.setStatus(404);
 		}
 	}
 	
@@ -69,7 +69,7 @@ public class ManagerController {
 		if(ms.reject(idDTO.reimbId, user.getId())) {
 			res.setStatus(200);
 		} else {
-			res.setStatus(400); //What would a proper http code be
+			res.setStatus(404);
 		}
 	}
 	
