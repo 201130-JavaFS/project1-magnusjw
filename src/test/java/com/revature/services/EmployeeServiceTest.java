@@ -1,6 +1,6 @@
 package com.revature.services;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -21,20 +21,31 @@ class EmployeeServiceTest {
 	}
 	
 	@Test
-	void testRequestAmount() {
+	void testNegativeAmount() {
 		r.setAmount(-500.0);
 		
-		boolean test = es.request(r);
+		String test = es.request(r);
 		
-		assertFalse(test);
+		assertEquals(test, "negative");
 	}
-
-	/*
+	
 	@Test
-	void testRequest() {
+	void testZeroAmount() {
+		r.setAmount(0);
 		
+		String test = es.request(r);
+		
+		assertEquals(test, "zero");
 	}
-	*/
+	
+	@Test
+	void testBadType() {
+		r.setTypeId(0);
+		
+		String test = es.request(r);
+		
+		assertEquals(test, "badType");
+	}
 }
 
 

@@ -14,17 +14,27 @@ public class EmployeeService {
 	private EmployeeDAOImple eDao = new EmployeeDAOImple();
 	
 	
-	public boolean request(Reimbursement reimb) {
+	public String request(Reimbursement reimb) {
+		
+		log.info("Request Method");
 		
 		if(reimb.getAmount() < 0) {
-			return false;
+			return "negative";
+		}
+		if(reimb.getAmount() == 0) {
+			return "zero";
+		}
+		if(reimb.getTypeId() < 1 || reimb.getTypeId() > 4) {
+			return "badType";
 		}
 		
 		eDao.addRequest(reimb);
-		return true;
+		return "success";
 	}
 	
 	public List<Reimbursement> viewTickets(int id) {
+		
+		log.info("View Tickets Method");
 		
 		List<Reimbursement> list = eDao.viewTickets(id);
 		

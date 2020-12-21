@@ -11,10 +11,8 @@ import javax.servlet.http.HttpSession;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.IdDTO;
-import com.revature.models.LoginDTO;
 import com.revature.models.Reimbursement;
 import com.revature.models.User;
 import com.revature.services.ManagerService;
@@ -42,10 +40,22 @@ public class ManagerController {
 		
 		IdDTO idDTO = om.readValue(body, IdDTO.class);
 
-		if(ms.accept(idDTO.reimbId, user.getId())) {
+		String result = ms.accept(idDTO.reimbId, user.getId());
+		
+		if(result == "success") {
 			res.setStatus(200);
-		} else {
+			
+		} else if(result == "invalidReimbId") {
+			res.setStatus(401);
+
+		} else if(result == "pending"){
+			res.setStatus(406);
+			
+		} else if(result == "notFound"){
 			res.setStatus(404);
+			
+		} else {
+			res.setStatus(400);
 		}
 	}
 	
@@ -66,10 +76,22 @@ public class ManagerController {
 		
 		IdDTO idDTO = om.readValue(body, IdDTO.class);
 
-		if(ms.reject(idDTO.reimbId, user.getId())) {
+		String result = ms.reject(idDTO.reimbId, user.getId());
+		
+		if(result == "success") {
 			res.setStatus(200);
-		} else {
+			
+		} else if(result == "invalidReimbId") {
+			res.setStatus(401);
+
+		} else if(result == "pending"){
+			res.setStatus(406);
+			
+		} else if(result == "notFound"){
 			res.setStatus(404);
+			
+		} else {
+			res.setStatus(400);
 		}
 	}
 	

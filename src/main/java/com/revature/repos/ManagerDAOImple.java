@@ -23,7 +23,7 @@ public class ManagerDAOImple{
 	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
 	
-	public boolean acceptTicket(int reimbId, int userId) {
+	public String acceptTicket(int reimbId, int userId) {
 		
 		Connection conn = cu.getConnection();
 		log.info("Accepting ticket #" + reimbId);
@@ -41,11 +41,11 @@ public class ManagerDAOImple{
 				
 				if(status != 1) {
 					log.info("Ticket is not pending");
-					return false;
+					return "pending";
 				}
 			} else {
 				log.info("Ticket not found, bad ticket id input");
-				return false;
+				return "notFound";
 			}
 			
 			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbResolved\" = ?, \"reimbResolver\" = ?, \"reimbStatusId\" = 2  where \"reimbId\" = ?;";
@@ -62,10 +62,10 @@ public class ManagerDAOImple{
 			e.printStackTrace();
 		}
 		
-		return true;
+		return "success";
 	}
 	
-	public boolean rejectTicket(int reimbId, int userId) {
+	public String rejectTicket(int reimbId, int userId) {
 		
 		Connection conn = cu.getConnection();
 		log.info("Rejecting ticket #" + reimbId);
@@ -83,11 +83,11 @@ public class ManagerDAOImple{
 				
 				if(status != 1) {
 					log.info("Ticket is not pending");
-					return false;
+					return "pending";
 				}
 			} else {
 				log.info("Ticket not found, bad ticket id input");
-				return false;
+				return "notFound";
 			}
 
 			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbResolved\" = ?, \"reimbResolver\" = ?, \"reimbStatusId\" = 3  where \"reimbId\" = ?;";
@@ -104,7 +104,7 @@ public class ManagerDAOImple{
 			e.printStackTrace();
 		}
 		
-		return true;
+		return "success";
 	}
 	
 	public List<Reimbursement> viewAll() {
@@ -178,10 +178,8 @@ public class ManagerDAOImple{
 				r.setAmount(rs.getDouble("reimbAmount"));
 				
 				Timestamp submitted = rs.getTimestamp("reimbSubmitted");
-				LocalDateTime strSubmitted = submitted.toLocalDateTime();
-				String str = strSubmitted.toString();
-				//String strSubmitted = dateFormat.format(submitted);
-				r.setSubmitted(str);
+				String strSubmitted = dateFormat.format(submitted);
+				r.setSubmitted(strSubmitted);
 				
 				Timestamp resolved = rs.getTimestamp("reimbResolved");
 				String strResolved;

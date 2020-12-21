@@ -1,0 +1,68 @@
+body
+{
+    background-color: slategray;
+}
+
+.employ
+{
+    background-color: burlywood;
+    padding: 25px;
+}
+
+h1
+{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 40px;
+}
+
+span
+{
+    font-family: 'News Cycle', sans-serif;
+    font-size: 20px; 
+}
+
+input
+{
+    border-radius: 4px;
+    background-color: darkgray;
+    padding: 4px;
+}
+
+::placeholder
+{
+    color:white;
+}
+
+
+#table-row
+{
+    margin-top: 50px;
+}
+
+.table th
+{
+    background-color: #28364d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #dbdbdb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-bordered td, .table-bordered th 
+{
+    border: 1px solid #dbdbdb !important;
+    border-left: 1px solid #dbdbdb !important;
+    border-right: 1px solid #dbdbdb !important;
+    border-bottom: 1px solid #dbdbdb !important;
+}
+
+#tbody
+{
+    background-color: #28364d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #dbdbdb;
+    text-align: center;
+    vertical-align: middle; 
+}

@@ -1,9 +1,6 @@
 package com.revature.web;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,8 +12,6 @@ import org.apache.logging.log4j.Logger;
 import com.revature.controllers.EmployeeController;
 import com.revature.controllers.LoginController;
 import com.revature.controllers.ManagerController;
-import com.revature.models.LoginDTO;
-import com.revature.repos.EmployeeDAOImple;
 
 public class MasterServlet extends HttpServlet{
 	

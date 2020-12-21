@@ -194,8 +194,18 @@ async function approveFunc(){
 
     if(response.status===200){
         document.getElementById("info").innerText = "Accepted";
+
     } else if(response.status===400){
-        document.getElementById("info").innerText = "Bad Request";
+        document.getElementById("info").innerText = "Unexpected Error";
+
+    } else if(response.status===401){
+        document.getElementById("info").innerText = "Invalid Ticket Id";
+
+    } else if(response.status===406){
+        document.getElementById("info").innerText = "Ticket must be Pending";
+        
+    } else if(response.status===404){
+        document.getElementById("info").innerText = "Ticket Not Found";
     }
 }
 
@@ -217,7 +227,17 @@ async function rejectFunc(){
 
     if(response.status===200){
         document.getElementById("info").innerText = "Rejected";
+
     } else if(response.status===400){
-        document.getElementById("info").innerText = "Bad Request";
+        document.getElementById("info").innerText = "Unexpected Error";
+
+    } else if(response.status===401){
+        document.getElementById("info").innerText = "Invalid Ticket Id";
+
+    } else if(response.status===406){
+        document.getElementById("info").innerText = "Ticket must be Pending";
+        
+    } else if(response.status===404){
+        document.getElementById("info").innerText = "Ticket Not Found";
     }
 }
