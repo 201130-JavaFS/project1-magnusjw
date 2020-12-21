@@ -4,6 +4,8 @@ import java.sql.Date;
 
 public class Reimbursement {
 	
+	//java.time.LocalDateTime class
+	
 	private int id;
 	private double amount;
 	private Date submitted;

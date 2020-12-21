@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +30,8 @@ public class EmployeeDAOImple{
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
+			ps.setTimestamp(3, Timestamp.valueOf(LocalDateTime.now()));
+			
 			ps.setDouble(1, reimb.getAmount());
 			ps.setDate(2, reimb.getSubmitted());
 			ps.setString(3, reimb.getDescription());
@@ -47,7 +51,7 @@ public class EmployeeDAOImple{
 		
 		try {
 			
-			String sql = "select * from \"Ers_Reimbursements\" where \"reimbAuthor\" = ?;";
+			String sql = "select * from \"Ers_Reimbursements\" where \"reimbAuthor\" = ? order by \"reimbId\";";
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, id);

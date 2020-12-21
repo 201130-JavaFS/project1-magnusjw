@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,77 +21,92 @@ public class ManagerDAOImple{
 	private static final Logger log = LogManager.getLogger(ManagerDAOImple.class);
 	private ConnectionUtil cu = ConnectionUtil.getConnectionUtil();
 	
-	public void acceptTicket(Reimbursement reimb) {
+	public boolean acceptTicket(int reimbId, int userId) {
 		
 		Connection conn = cu.getConnection();
-		log.info("Accepting ticket #" + reimb.getId());
+		log.info("Accepting ticket #" + reimbId);
 		
 		try {
 			String sql = "select * from \"Ers_Reimbursements\" where \"reimbId\" = ?;";
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, reimb.getId());
+			ps.setInt(1, reimbId);
 			
 			ResultSet rs = ps.executeQuery();
 			
-			int status = 0; //Should never be 0
-			
 			if(rs.next()) {
-				status = rs.getInt("reimbStatusId");
-				if(status == 1) {// If pending
-					status = 2; // Change to accepted
+				int status = rs.getInt("reimbStatusId");
+				
+				if(status != 1) {
+					log.info("Ticket is not pending");
+					return false;
 				}
+			} else {
+				log.info("Ticket not found, bad ticket id input");
+				return false;
 			}
 			
-			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbStatusId\" = ? and \"reimbResolved\" = ? and \"reimbResolver\" = ? where \"reimbId\" = ?;";
+			//If ticket is pending, we get here
+			
+			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbResolved\" = ?, \"reimbResolver\" = ?, \"reimbStatusId\" = 2  where \"reimbId\" = ?;";
 			
 			PreparedStatement ps2 = conn.prepareStatement(sql2);
-			ps2.setInt(1, status);
-			ps2.setInt(2, reimbId);
-			ps2.setInt(2, reimbId);
-			ps2.setInt(2, reimb.getId());
+			
+			ps2.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
+			ps2.setInt(2, userId);
+			ps2.setInt(3, reimbId);
 			
 			ps2.executeUpdate();
 			
-			
 		} catch(SQLException e) {
-			System.out.println("ManagerDAO SQL error");
+			e.printStackTrace();
 		}
+		
+		return true;
 	}
 	
-	public void rejectTicket(Reimbursement reimb) {
+	public boolean rejectTicket(int reimbId, int userId) {
 		
 		Connection conn = cu.getConnection();
-		log.info("Rejecting ticket #" + reimb.getId());
+		log.info("Rejecting ticket #" + reimbId);
 		
 		try {
 			String sql = "select * from \"Ers_Reimbursements\" where \"reimbId\" = ?;";
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, reimb.getId());
+			ps.setInt(1, reimbId);
 			
 			ResultSet rs = ps.executeQuery();
 			
-			int status = 0; //Should never be 0
-			
 			if(rs.next()) {
-				status = rs.getInt("reimbStatusId");
-				if(status == 1) {// If pending
-					status = 3; // Change to rejected
+				int status = rs.getInt("reimbStatusId");
+				
+				if(status != 1) {
+					log.info("Ticket is not pending");
+					return false;
 				}
+			} else {
+				log.info("Ticket not found, bad ticket id input");
+				return false;
 			}
 			
-			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbStatusId\" = ? where \"reimbId\" = ?;";
+			//If ticket is pending, we get here
+			
+			String sql2 = "Update \"Ers_Reimbursements\" set \"reimbResolved\" = ?, \"reimbResolver\" = ?, \"reimbStatusId\" = 3  where \"reimbId\" = ?;";
 			
 			PreparedStatement ps2 = conn.prepareStatement(sql2);
-			ps2.setInt(1, status);
-			ps2.setInt(2, reimb.getId());
+			
+			ps2.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
+			ps2.setInt(2, userId);
+			ps2.setInt(3, reimbId);
 			
 			ps2.executeUpdate();
 			
 		} catch(SQLException e) {
-			System.out.println("ManagerDAO SQL error");
+			e.printStackTrace();
 		}
+		
+		return true;
 	}
 	
 	public List<Reimbursement> viewAll() {
@@ -99,7 +116,7 @@ public class ManagerDAOImple{
 		
 		try {
 			
-			String sql = "select * from \"Ers_Reimbursements\";";
+			String sql = "select * from \"Ers_Reimbursements\" order by \"reimbId\";";
 			
 			Statement s = conn.createStatement();
 			
@@ -136,7 +153,7 @@ public class ManagerDAOImple{
 		
 		try {
 			
-			String sql = "select * from \"Ers_Reimbursements\" where \"reimbStatusId\" = 1;"; //Pending Tickets
+			String sql = "select * from \"Ers_Reimbursements\" where \"reimbStatusId\" = 1 order by \"reimbId\";"; //Pending Tickets
 			
 			Statement s = conn.createStatement();
 			

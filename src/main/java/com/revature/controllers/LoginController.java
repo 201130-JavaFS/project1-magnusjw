@@ -46,6 +46,7 @@ public class LoginController {
 				HttpSession ses = req.getSession();
 				
 				ses.setAttribute("user", user);
+				
 				ses.setAttribute("loggedin", true);
 				
 				res.setStatus(200);

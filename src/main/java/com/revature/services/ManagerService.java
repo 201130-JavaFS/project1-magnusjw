@@ -14,19 +14,23 @@ public class ManagerService {
 	private static final Logger log = LogManager.getLogger(ManagerService.class);
 	private ManagerDAOImple mDao = new ManagerDAOImple();
 	
-	public boolean accept(Reimbursement reimb) {
+	public boolean accept(int reimbId, int userId) {
 		
-		mDao.acceptTicket(reimb);
+		if(mDao.acceptTicket(reimbId, userId)) {
+			return true;
+		}
 		
-		return true;
+		return false;
 		
 	}
 	
-	public boolean reject(Reimbursement reimb) {
+	public boolean reject(int reimbId, int userId) {
 		
-		mDao.rejectTicket(reimb);
+		if(mDao.rejectTicket(reimbId, userId)) {
+			return true;
+		}
 		
-		return true;
+		return false;
 		
 	}
 	

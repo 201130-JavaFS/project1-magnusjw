@@ -37,7 +37,6 @@ public class EmployeeController {
 		HttpSession ses = req.getSession(false);
 		User user = (User)ses.getAttribute("user");
 		
-		es.request();
 		
 		res.setStatus(200);
 	}

@@ -416,3 +416,297 @@
 2020-12-20 17:02:15 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
 2020-12-20 17:02:17 INFO  MasterServlet:34 - Master Servlet doGet Method
 2020-12-20 17:02:17 INFO  ManagerDAOImple:133 - Viewing Pending Employee's Tickets
+2020-12-20 17:03:38 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:03:38 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:03:39 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:03:39 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:04:56 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:04:56 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:05:44 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:05:44 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:06:28 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:06:28 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:06:29 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:06:29 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:06:33 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:06:34 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:06:35 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:06:35 INFO  ManagerDAOImple:63 - Rejecting ticket #0
+2020-12-20 17:06:35 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:06:35 INFO  ManagerDAOImple:63 - Rejecting ticket #0
+2020-12-20 17:06:38 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:06:38 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:06:38 INFO  ManagerDAOImple:63 - Rejecting ticket #0
+2020-12-20 17:06:47 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:06:48 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:06:57 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:06:57 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:07:52 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:07:52 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:14:35 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 17:14:35 INFO  LoginController:27 - Login in LoginController
+2020-12-20 17:14:35 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 17:14:35 INFO  LoginService:22 - User Found!
+2020-12-20 17:14:35 INFO  LoginController:45 - User Found
+2020-12-20 17:14:35 INFO  LoginController:54 - User Role id is 2
+2020-12-20 17:14:35 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 17:14:37 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:14:37 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:22:50 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:22:50 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:22:53 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:22:53 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:23:17 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:23:17 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:23:32 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:23:32 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:23:50 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:23:50 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:24:46 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:24:46 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:25:15 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:25:15 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:25:45 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:25:45 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:25:49 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:25:49 INFO  ManagerDAOImple:135 - Viewing Pending Employee's Tickets
+2020-12-20 17:25:50 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:25:50 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:25:54 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:25:54 INFO  ManagerDAOImple:98 - Viewing All Employee's Tickets
+2020-12-20 17:26:46 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 17:51:09 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:11 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:19 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 17:51:19 INFO  LoginController:27 - Login in LoginController
+2020-12-20 17:51:19 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 17:51:19 INFO  LoginService:22 - User Found!
+2020-12-20 17:51:19 INFO  LoginController:45 - User Found
+2020-12-20 17:51:19 INFO  LoginController:54 - User Role id is 1
+2020-12-20 17:51:19 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 17:51:22 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:23 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:29 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 17:51:29 INFO  LoginController:27 - Login in LoginController
+2020-12-20 17:51:29 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 17:51:29 INFO  LoginService:22 - User Found!
+2020-12-20 17:51:29 INFO  LoginController:45 - User Found
+2020-12-20 17:51:29 INFO  LoginController:54 - User Role id is 2
+2020-12-20 17:51:29 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 17:51:31 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:32 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:43 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:43 INFO  ManagerDAOImple:146 - Viewing Pending Employee's Tickets
+2020-12-20 17:51:44 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:51:44 INFO  ManagerDAOImple:109 - Viewing All Employee's Tickets
+2020-12-20 17:53:49 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:54:02 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:54:12 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:54:12 INFO  ManagerDAOImple:146 - Viewing Pending Employee's Tickets
+2020-12-20 17:54:15 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 17:54:15 INFO  ManagerDAOImple:146 - Viewing Pending Employee's Tickets
+2020-12-20 17:54:18 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:08:03 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:08:03 INFO  ManagerDAOImple:145 - Viewing Pending Employee's Tickets
+2020-12-20 18:10:54 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:11:03 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 18:11:03 INFO  LoginController:27 - Login in LoginController
+2020-12-20 18:11:03 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 18:11:03 INFO  LoginService:22 - User Found!
+2020-12-20 18:11:03 INFO  LoginController:45 - User Found
+2020-12-20 18:11:03 INFO  LoginController:54 - User Role id is 2
+2020-12-20 18:11:03 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 18:11:17 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:11:17 INFO  ManagerDAOImple:154 - Viewing Pending Employee's Tickets
+2020-12-20 18:11:24 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:11:26 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:11:50 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:16:16 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:16:17 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:16:20 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:31:46 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:31:58 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 18:31:58 INFO  LoginController:27 - Login in LoginController
+2020-12-20 18:31:58 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 18:31:58 INFO  LoginService:22 - User Found!
+2020-12-20 18:31:58 INFO  LoginController:45 - User Found
+2020-12-20 18:31:58 INFO  LoginController:55 - User Role id is 2
+2020-12-20 18:31:58 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 18:31:59 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:31:59 INFO  ManagerDAOImple:154 - Viewing Pending Employee's Tickets
+2020-12-20 18:32:02 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:34:27 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:35:58 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:35:58 INFO  ManagerDAOImple:154 - Viewing Pending Employee's Tickets
+2020-12-20 18:36:01 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:38:05 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:39:22 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 18:39:22 INFO  ManagerDAOImple:154 - Viewing Pending Employee's Tickets
+2020-12-20 18:39:24 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:39:44 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 18:39:44 INFO  LoginController:27 - Login in LoginController
+2020-12-20 18:39:44 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 18:39:44 INFO  LoginService:22 - User Found!
+2020-12-20 18:39:44 INFO  LoginController:45 - User Found
+2020-12-20 18:39:44 INFO  LoginController:55 - User Role id is 2
+2020-12-20 18:39:44 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 18:39:46 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:39:46 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 18:41:13 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:41:22 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 18:41:22 INFO  LoginController:27 - Login in LoginController
+2020-12-20 18:41:22 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 18:41:22 INFO  LoginService:22 - User Found!
+2020-12-20 18:41:22 INFO  LoginController:45 - User Found
+2020-12-20 18:41:22 INFO  LoginController:55 - User Role id is 2
+2020-12-20 18:41:22 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 18:41:23 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:41:23 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 18:41:44 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:41:51 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:42:01 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 18:42:01 INFO  LoginController:27 - Login in LoginController
+2020-12-20 18:42:01 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 18:42:01 INFO  LoginService:22 - User Found!
+2020-12-20 18:42:01 INFO  LoginController:45 - User Found
+2020-12-20 18:42:01 INFO  LoginController:55 - User Role id is 2
+2020-12-20 18:42:01 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 18:42:02 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 18:42:02 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:09:56 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:10:06 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:10:06 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:10:06 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:10:06 INFO  LoginService:22 - User Found!
+2020-12-20 19:10:06 INFO  LoginController:45 - User Found
+2020-12-20 19:10:06 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:10:06 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:10:08 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:10:08 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:10:31 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:10:31 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:10:41 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:11:01 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:11:01 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:11:01 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:11:01 INFO  LoginService:22 - User Found!
+2020-12-20 19:11:01 INFO  LoginController:45 - User Found
+2020-12-20 19:11:01 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:11:01 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:11:02 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:11:02 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:11:17 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:11:22 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:11:22 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:11:22 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:11:22 INFO  LoginService:22 - User Found!
+2020-12-20 19:11:22 INFO  LoginController:45 - User Found
+2020-12-20 19:11:22 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:11:22 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:11:23 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:11:23 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:12:06 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:12:11 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:12:11 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:12:11 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:12:11 INFO  LoginService:22 - User Found!
+2020-12-20 19:12:11 INFO  LoginController:45 - User Found
+2020-12-20 19:12:11 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:12:11 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:12:13 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:12:13 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:12:24 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:13:50 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:13:55 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:13:55 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:13:55 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:13:55 INFO  LoginService:22 - User Found!
+2020-12-20 19:13:55 INFO  LoginController:45 - User Found
+2020-12-20 19:13:55 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:13:55 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:13:57 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:13:57 INFO  ManagerDAOImple:87 - Rejecting ticket #3
+2020-12-20 19:14:42 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:14:42 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:14:42 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:14:42 INFO  LoginService:22 - User Found!
+2020-12-20 19:14:42 INFO  LoginController:45 - User Found
+2020-12-20 19:14:42 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:14:42 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:14:43 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:14:43 INFO  ManagerDAOImple:173 - Viewing Pending Employee's Tickets
+2020-12-20 19:14:52 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:14:52 INFO  ManagerDAOImple:136 - Viewing All Employee's Tickets
+2020-12-20 19:14:55 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:14:55 INFO  ManagerDAOImple:136 - Viewing All Employee's Tickets
+2020-12-20 19:18:42 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:18:48 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:18:48 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:18:48 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:18:48 INFO  LoginService:22 - User Found!
+2020-12-20 19:18:48 INFO  LoginController:45 - User Found
+2020-12-20 19:18:48 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:18:48 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:18:50 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:18:50 INFO  ManagerDAOImple:152 - Viewing Pending Employee's Tickets
+2020-12-20 19:19:07 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:19:07 INFO  ManagerDAOImple:27 - Accepting ticket #0
+2020-12-20 19:19:07 INFO  ManagerDAOImple:45 - Ticket not found, bad ticket id input
+2020-12-20 19:19:12 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:19:12 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:19:23 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:19:23 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:19:31 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:19:31 INFO  ManagerDAOImple:27 - Accepting ticket #5
+2020-12-20 19:19:33 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:19:33 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:22:33 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:22:33 INFO  ManagerDAOImple:27 - Accepting ticket #3
+2020-12-20 19:22:33 INFO  ManagerDAOImple:41 - Ticket is not pending
+2020-12-20 19:22:34 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:22:34 INFO  ManagerDAOImple:27 - Accepting ticket #5
+2020-12-20 19:22:34 INFO  ManagerDAOImple:41 - Ticket is not pending
+2020-12-20 19:22:35 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:22:35 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:22:35 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:22:35 INFO  ManagerDAOImple:152 - Viewing Pending Employee's Tickets
+2020-12-20 19:22:40 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:22:40 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:22:42 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:22:42 INFO  ManagerDAOImple:27 - Accepting ticket #5
+2020-12-20 19:22:42 INFO  ManagerDAOImple:41 - Ticket is not pending
+2020-12-20 19:22:53 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:22:53 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:22:57 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:22:57 INFO  ManagerDAOImple:27 - Accepting ticket #4
+2020-12-20 19:23:00 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:23:00 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:24:46 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:25:13 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:25:19 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:25:19 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:25:19 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:25:19 INFO  LoginService:22 - User Found!
+2020-12-20 19:25:19 INFO  LoginController:45 - User Found
+2020-12-20 19:25:19 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:25:19 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:25:22 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:25:22 INFO  ManagerDAOImple:152 - Viewing Pending Employee's Tickets
+2020-12-20 19:25:40 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:25:40 INFO  ManagerDAOImple:152 - Viewing Pending Employee's Tickets
+2020-12-20 19:25:46 INFO  MasterServlet:78 - Master Servlet doPost Method
+2020-12-20 19:25:46 INFO  LoginController:27 - Login in LoginController
+2020-12-20 19:25:46 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-20 19:25:46 INFO  LoginService:22 - User Found!
+2020-12-20 19:25:46 INFO  LoginController:45 - User Found
+2020-12-20 19:25:46 INFO  LoginController:55 - User Role id is 2
+2020-12-20 19:25:46 INFO  MasterServlet:88 - 200 Status code from Login
+2020-12-20 19:25:47 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:25:47 INFO  ManagerDAOImple:152 - Viewing Pending Employee's Tickets
+2020-12-20 19:26:11 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:26:11 INFO  ManagerDAOImple:27 - Accepting ticket #1
+2020-12-20 19:26:18 INFO  MasterServlet:34 - Master Servlet doGet Method
+2020-12-20 19:26:18 INFO  ManagerDAOImple:115 - Viewing All Employee's Tickets
+2020-12-20 19:26:22 INFO  MasterServlet:114 - Master Servlet doPut Method
+2020-12-20 19:26:22 INFO  ManagerDAOImple:71 - Rejecting ticket #1
+2020-12-20 19:26:22 INFO  ManagerDAOImple:85 - Ticket is not pending

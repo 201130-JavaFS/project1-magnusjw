@@ -28,12 +28,10 @@ async function loginFunc(){
     console.log(data);
 
     if(data == 1){
-      window.alert("test1");
       location.replace("employee.html");
     }
 
     if(data == 2)
-      window.alert("test2");
       location.replace("manager.html");
       
   }else{

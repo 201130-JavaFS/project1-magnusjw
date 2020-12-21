@@ -121,7 +121,6 @@ public class MasterServlet extends HttpServlet{
 					
 					mc.approve(req, res);
 					
-					
 				} else {
 					res.setStatus(403);
 				}
@@ -130,7 +129,6 @@ public class MasterServlet extends HttpServlet{
 				if(req.getSession(false)!=null) {
 					
 					mc.reject(req, res);
-					
 					
 				} else {
 					res.setStatus(403);
