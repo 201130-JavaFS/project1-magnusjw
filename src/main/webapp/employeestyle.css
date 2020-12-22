@@ -48,6 +48,7 @@ label
     color:white;
     position: relative;
     left: 45px;
+
 }
 
 #type
@@ -107,3 +108,23 @@ option
     text-align: center;
     vertical-align: middle; 
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: burlywood;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

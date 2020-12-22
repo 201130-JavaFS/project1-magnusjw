@@ -57,10 +57,14 @@ public class ManagerService {
 	
 	public List<Reimbursement> viewAll() {
 		
+		log.info("View All Tickets Method");
+		
 		return mDao.viewAll();
 	}
 	
 	public List<Reimbursement> viewPending(){
+		
+		log.info("View Pending Tickets Method");
 		
 		return mDao.viewPending();
 	}

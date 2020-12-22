@@ -1574,3 +1574,543 @@
 2020-12-21 18:56:57 INFO  ManagerService:39 - Reject Method
 2020-12-21 18:56:57 INFO  ManagerDAOImple:71 - Rejecting ticket #500
 2020-12-21 18:56:57 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-21 19:00:45 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:00:45 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:00:45 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:00:45 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:00:45 INFO  LoginService:19 - User Not Found
+2020-12-21 19:00:45 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:00:45 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:00:45 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:00:45 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-21 19:00:45 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-21 19:00:45 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:00:45 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-21 19:00:45 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-21 19:03:06 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:03:44 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:03:44 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:03:44 INFO  LoginService:16 - Login Method
+2020-12-21 19:03:44 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:03:44 INFO  LoginService:24 - User #2 Found
+2020-12-21 19:03:44 INFO  LoginController:45 - User Found
+2020-12-21 19:03:44 INFO  LoginController:55 - User Role id is 2
+2020-12-21 19:03:44 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:03:48 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:03:48 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 19:03:48 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 19:03:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:03:50 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:03:50 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:03:52 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:03:52 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:03:52 INFO  ManagerDAOImple:29 - Accepting ticket #1
+2020-12-21 19:03:52 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-21 19:03:59 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:03:59 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:03:59 INFO  ManagerDAOImple:29 - Accepting ticket #5
+2020-12-21 19:03:59 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-21 19:04:01 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:01 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:01 INFO  ManagerDAOImple:71 - Rejecting ticket #5
+2020-12-21 19:04:01 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-21 19:04:03 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:03 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:03 INFO  ManagerDAOImple:29 - Accepting ticket #22
+2020-12-21 19:04:03 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-21 19:04:03 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:03 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:03 INFO  ManagerDAOImple:71 - Rejecting ticket #22
+2020-12-21 19:04:03 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-21 19:04:05 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:05 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:05 INFO  ManagerDAOImple:29 - Accepting ticket #21
+2020-12-21 19:04:07 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:07 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:07 INFO  ManagerDAOImple:29 - Accepting ticket #21
+2020-12-21 19:04:07 INFO  ManagerDAOImple:43 - Ticket is not pending
+2020-12-21 19:04:08 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:08 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:08 INFO  ManagerDAOImple:71 - Rejecting ticket #21
+2020-12-21 19:04:08 INFO  ManagerDAOImple:85 - Ticket is not pending
+2020-12-21 19:04:13 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:13 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:13 INFO  ManagerDAOImple:29 - Accepting ticket #19
+2020-12-21 19:04:13 INFO  ManagerDAOImple:43 - Ticket is not pending
+2020-12-21 19:04:14 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:14 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:14 INFO  ManagerDAOImple:71 - Rejecting ticket #19
+2020-12-21 19:04:14 INFO  ManagerDAOImple:85 - Ticket is not pending
+2020-12-21 19:04:18 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:18 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:19 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:19 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:21 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:21 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:22 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:25 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:25 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:25 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:25 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:27 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:27 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:27 INFO  ManagerDAOImple:29 - Accepting ticket #1
+2020-12-21 19:04:27 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-21 19:04:30 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:30 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:30 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:30 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:32 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:32 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:33 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:33 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:04:34 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:34 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:04:34 INFO  ManagerDAOImple:29 - Accepting ticket #51
+2020-12-21 19:04:34 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-21 19:04:37 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:37 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:37 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:38 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:38 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:04:39 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:05:34 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:05:34 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:05:34 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:05:35 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:05:35 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 19:05:35 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 19:05:35 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:05:35 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:05:35 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:05:56 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:05:56 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:05:56 INFO  LoginService:16 - Login Method
+2020-12-21 19:05:56 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:05:56 INFO  LoginService:24 - User #1 Found
+2020-12-21 19:05:56 INFO  LoginController:45 - User Found
+2020-12-21 19:05:56 INFO  LoginController:55 - User Role id is 1
+2020-12-21 19:05:56 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:05:58 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:05:58 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:05:58 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:05:59 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:05:59 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:05:59 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:06:07 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:06:07 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:09:42 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:09:42 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:09:42 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:09:42 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:09:43 INFO  LoginService:16 - Login Method
+2020-12-21 19:09:43 INFO  LoginService:16 - Login Method
+2020-12-21 19:09:43 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:09:43 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:09:43 INFO  LoginService:24 - User #1 Found
+2020-12-21 19:09:43 INFO  LoginController:45 - User Found
+2020-12-21 19:09:43 INFO  LoginController:55 - User Role id is 1
+2020-12-21 19:09:43 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:09:43 INFO  LoginService:24 - User #1 Found
+2020-12-21 19:09:43 INFO  LoginController:45 - User Found
+2020-12-21 19:09:43 INFO  LoginController:55 - User Role id is 1
+2020-12-21 19:09:43 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:09:44 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:09:44 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:09:44 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:09:45 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:09:45 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:09:48 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:09:48 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:09:52 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:09:52 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:09:53 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:09:53 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:09:53 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 19:09:59 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:09:59 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:09:59 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:12:16 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:12:16 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:12:16 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:12:19 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:12:19 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:12:44 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:12:44 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:12:45 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:12:45 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:12:46 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:12:46 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:12:53 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:12:53 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:12:58 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:12:58 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:12:59 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:12:59 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:12:59 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:13:16 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:13:16 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:13:16 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 19:13:17 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:13:17 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:13:17 INFO  EmployeeDAOImple:55 - Viewing Employee 1's Tickets
+2020-12-21 19:15:17 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:15:17 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:15:17 INFO  LoginService:16 - Login Method
+2020-12-21 19:15:17 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:15:17 INFO  LoginService:21 - User Not Found
+2020-12-21 19:15:37 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:15:37 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:15:37 INFO  LoginService:16 - Login Method
+2020-12-21 19:15:37 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:15:37 INFO  LoginService:21 - User Not Found
+2020-12-21 19:16:01 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:16:01 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:16:01 INFO  LoginService:16 - Login Method
+2020-12-21 19:16:01 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:16:01 INFO  LoginService:24 - User #4 Found
+2020-12-21 19:16:01 INFO  LoginController:45 - User Found
+2020-12-21 19:16:01 INFO  LoginController:55 - User Role id is 1
+2020-12-21 19:16:01 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:16:02 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:16:02 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:16:02 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:16:16 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:16:16 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:16:16 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 19:16:17 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:16:17 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:16:17 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:07 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:17:07 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:17:07 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 19:17:08 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:08 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:08 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:09 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:09 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:09 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:10 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:10 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:10 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:13 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:13 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:13 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:21 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:17:21 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:17:21 INFO  LoginService:16 - Login Method
+2020-12-21 19:17:21 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:17:21 INFO  LoginService:24 - User #4 Found
+2020-12-21 19:17:21 INFO  LoginController:45 - User Found
+2020-12-21 19:17:21 INFO  LoginController:55 - User Role id is 1
+2020-12-21 19:17:21 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:17:22 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:22 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:22 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:22 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:22 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:22 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:50 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:17:50 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:17:50 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 19:17:51 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:51 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:51 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:17:58 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:17:58 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:17:58 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 19:17:58 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:17:58 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 19:17:58 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 19:18:13 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:18:13 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:18:13 INFO  LoginService:16 - Login Method
+2020-12-21 19:18:13 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:18:13 INFO  LoginService:24 - User #5 Found
+2020-12-21 19:18:13 INFO  LoginController:45 - User Found
+2020-12-21 19:18:13 INFO  LoginController:55 - User Role id is 2
+2020-12-21 19:18:13 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:18:15 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:15 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:18:15 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:18:16 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:16 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 19:18:16 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 19:18:23 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:18:23 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:18:23 INFO  ManagerDAOImple:29 - Accepting ticket #22
+2020-12-21 19:18:26 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:18:26 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:18:26 INFO  ManagerDAOImple:71 - Rejecting ticket #25
+2020-12-21 19:18:30 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:18:30 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:18:30 INFO  ManagerDAOImple:29 - Accepting ticket #24
+2020-12-21 19:18:31 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:31 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:18:31 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:18:32 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:32 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 19:18:32 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 19:18:33 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:33 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:18:33 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:18:37 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:37 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 19:18:37 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 19:18:38 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:38 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:18:38 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:18:39 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:39 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:18:39 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:18:39 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:39 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 19:18:39 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 19:18:40 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:18:40 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:18:40 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:20:25 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:20:25 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:20:25 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:21:19 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:21:19 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:21:19 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 19:21:38 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:21:38 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:21:39 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:21:39 INFO  ManagerService:39 - Reject Method
+2020-12-21 19:23:58 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:23:58 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:24:10 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:24:10 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:24:31 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:24:32 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:24:32 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:26:40 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:26:40 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:26:46 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:26:48 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:26:48 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:28:01 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:28:01 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:28:19 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:28:19 INFO  LoginController:27 - Login in LoginController
+2020-12-21 19:28:19 INFO  LoginService:16 - Login Method
+2020-12-21 19:28:19 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 19:28:19 INFO  LoginService:24 - User #4 Found
+2020-12-21 19:28:19 INFO  LoginController:45 - User Found
+2020-12-21 19:28:19 INFO  LoginController:55 - User Role id is 1
+2020-12-21 19:28:19 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 19:28:22 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 19:28:22 INFO  EmployeeService:19 - Request Method
+2020-12-21 19:29:09 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-21 19:29:09 INFO  ManagerService:18 - Accept Method
+2020-12-21 19:29:10 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 19:29:10 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 19:29:10 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:06:26 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:06:26 INFO  LoginController:27 - Login in LoginController
+2020-12-21 20:06:26 INFO  LoginService:16 - Login Method
+2020-12-21 20:06:26 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 20:06:26 INFO  LoginService:21 - User Not Found
+2020-12-21 20:06:39 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:06:48 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:06:48 INFO  LoginController:27 - Login in LoginController
+2020-12-21 20:06:48 INFO  LoginService:16 - Login Method
+2020-12-21 20:06:48 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 20:06:48 INFO  LoginService:24 - User #4 Found
+2020-12-21 20:06:48 INFO  LoginController:45 - User Found
+2020-12-21 20:06:48 INFO  LoginController:55 - User Role id is 1
+2020-12-21 20:06:48 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 20:07:16 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:07:16 INFO  LoginController:27 - Login in LoginController
+2020-12-21 20:07:16 INFO  LoginService:16 - Login Method
+2020-12-21 20:07:16 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 20:07:16 INFO  LoginService:24 - User #4 Found
+2020-12-21 20:07:16 INFO  LoginController:45 - User Found
+2020-12-21 20:07:16 INFO  LoginController:55 - User Role id is 1
+2020-12-21 20:07:16 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 20:07:18 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:07:18 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:07:24 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:07:24 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:07:38 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:07:38 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:07:38 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 20:07:40 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:07:40 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:07:40 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:08:25 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:25 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:08:25 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:08:35 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:08:35 INFO  LoginController:27 - Login in LoginController
+2020-12-21 20:08:35 INFO  LoginService:16 - Login Method
+2020-12-21 20:08:35 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 20:08:35 INFO  LoginService:24 - User #5 Found
+2020-12-21 20:08:35 INFO  LoginController:45 - User Found
+2020-12-21 20:08:35 INFO  LoginController:55 - User Role id is 2
+2020-12-21 20:08:35 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 20:08:38 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:38 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:38 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:44 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:44 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:44 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:45 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:45 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:45 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:46 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:46 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:46 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:47 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:47 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:47 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:47 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:47 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:47 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:50 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:50 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:50 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:50 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:51 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:51 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:51 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:51 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:51 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:51 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:52 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:52 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:52 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:52 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:52 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:52 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:53 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:53 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:53 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:08:54 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:54 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:08:54 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:08:59 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:08:59 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:08:59 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:01 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:01 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:01 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:01 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:01 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:09:01 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:02 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:02 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:02 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:04 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:04 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:09:04 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:05 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:05 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:05 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:10 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:10 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:09:10 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:16 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:16 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:16 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:19 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:19 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:09:19 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:19 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:19 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:19 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:19 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:19 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:09:19 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:20 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:20 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:20 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:33 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:33 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:33 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:09:33 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:33 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:09:33 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:09:36 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:09:36 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:09:36 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:10:42 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:42 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:10:42 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:10:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:50 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:10:50 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:10:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:50 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:10:50 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:10:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:50 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:10:50 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:10:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:50 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:10:50 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:10:50 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:50 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:10:50 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:10:51 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:51 INFO  ManagerService:67 - View Pending Tickets Method
+2020-12-21 20:10:51 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-21 20:10:51 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:10:51 INFO  ManagerService:60 - View All Tickets Method
+2020-12-21 20:10:51 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-21 20:11:51 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:11:51 INFO  LoginController:27 - Login in LoginController
+2020-12-21 20:11:51 INFO  LoginService:16 - Login Method
+2020-12-21 20:11:51 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-21 20:11:51 INFO  LoginService:24 - User #4 Found
+2020-12-21 20:11:51 INFO  LoginController:45 - User Found
+2020-12-21 20:11:51 INFO  LoginController:55 - User Role id is 1
+2020-12-21 20:11:51 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-21 20:12:07 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:12:07 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:12:07 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 20:12:07 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:12:07 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:12:07 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:12:25 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:12:25 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:12:25 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:12:26 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:12:26 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:12:26 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:13:18 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:13:18 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:13:18 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:15:05 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:15:05 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:15:05 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:15:21 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:15:21 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:15:21 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:15:28 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:15:28 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:15:28 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 20:15:57 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:15:57 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:16:19 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:16:19 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:16:26 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:16:26 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:16:27 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:16:27 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:17:09 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:17:09 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:17:09 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 20:17:17 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:17:17 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:17:17 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-21 20:17:18 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:17:18 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:17:18 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:17:56 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:17:56 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:17:56 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets

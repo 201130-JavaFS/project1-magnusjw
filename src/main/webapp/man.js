@@ -23,8 +23,6 @@ async function pendingTicketsFunc(){
 
     document.getElementById("tbody").innerHTML = "";
 
-    console.log(data);
-
     if(data == ""){
         document.getElementById("info").innerText = "No Entries";
     }
@@ -109,8 +107,6 @@ async function everyTicketFunc(){
     if(data == ""){
         document.getElementById("info").innerText = "No Entries";
     }
-
-    console.log(data.resolverId);
 
     for(let ticket of data){
         console.log(ticket);

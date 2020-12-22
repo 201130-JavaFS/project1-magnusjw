@@ -41,6 +41,7 @@ class EmployeeServiceTest {
 	@Test
 	void testBadType() {
 		r.setTypeId(0);
+		r.setAmount(10);
 		
 		String test = es.request(r);
 		

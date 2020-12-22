@@ -6,7 +6,6 @@ document.getElementById("requestBtn").addEventListener('click', addRequestFunc);
 
 async function onloadFunc(){
     document.getElementById("user-destination").innerText=localStorage["username"];
-    document.getElementById("type").value = "";
 }
 
 async function viewTicketsFunc(){
@@ -97,11 +96,10 @@ async function addRequestFunc(){
     let d = document.getElementById("description").value;
 
     document.getElementById("amount").value = "";
-    document.getElementById("type").value = "";
+    document.getElementById("type").value = "other";
     document.getElementById("description").value = "";
 
     let t;
-    console.log(ta);
 
     if(ta == "lodging"){
         t = 1;
@@ -128,9 +126,18 @@ async function addRequestFunc(){
   });
 
   if(response.status===200){
-    document.getElementById("info").innerText="Success!";
+    document.getElementById("info").innerText = "Submitted";
 
-  }else{
-    document.getElementById("info").innerText="Failed Request";
-  }
+} else if(response.status===400){
+    document.getElementById("info").innerText = "Unexpected Error";
+
+} else if(response.status===401){
+    document.getElementById("info").innerText = "Amount cannot be Negative";
+
+} else if(response.status===402){
+    document.getElementById("info").innerText = "Amount cannot be Zero";
+    
+} else if(response.status===403){
+    document.getElementById("info").innerText = "Invalid Type";
+}
 }

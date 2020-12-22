@@ -54,10 +54,22 @@ public class EmployeeController {
 		r.setAuthorId(user.getId());
 		r.setStatusId(1);
 		
-		System.out.println(r);
-		
-		es.request(r);
+		String result = es.request(r);
 
-		res.setStatus(200);
+		if(result == "success") {
+			res.setStatus(200);
+			
+		} else if(result == "negative") {
+			res.setStatus(401);
+
+		} else if(result == "zero"){
+			res.setStatus(402);
+			
+		} else if(result == "badType"){
+			res.setStatus(403);
+			
+		} else {
+			res.setStatus(400);
+		}
 	}
 }

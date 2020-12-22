@@ -13,13 +13,15 @@ public class LoginService {
 	
 	public User login(String username, String password) {
 		
+		log.info("Login Method");
+		
 		User user = lDao.findUser(username, password);
 		
 		if(user == null) {
 			log.info("User Not Found");
 			return null;
 		}
-		log.info("User Found!");
+		log.info("User #" + user.getId() + " Found");
 		return user;
 	}
 
