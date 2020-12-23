@@ -24,5 +24,4 @@ public class LoginService {
 		log.info("User #" + user.getId() + " Found");
 		return user;
 	}
-
 }

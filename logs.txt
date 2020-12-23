@@ -2114,3 +2114,223 @@
 2020-12-21 20:17:56 INFO  MasterServlet:29 - Master Servlet doGet Method
 2020-12-21 20:17:56 INFO  EmployeeService:37 - View Tickets Method
 2020-12-21 20:17:56 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:44:05 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-21 20:44:05 INFO  EmployeeService:19 - Request Method
+2020-12-21 20:44:06 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:44:06 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:44:06 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-21 20:44:07 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-21 20:44:07 INFO  EmployeeService:37 - View Tickets Method
+2020-12-21 20:44:07 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-22 13:15:48 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 13:16:02 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 13:16:02 INFO  LoginController:27 - Login in LoginController
+2020-12-22 13:16:02 INFO  LoginService:16 - Login Method
+2020-12-22 13:16:02 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:16:02 INFO  LoginService:24 - User #2 Found
+2020-12-22 13:16:02 INFO  LoginController:45 - User Found
+2020-12-22 13:16:02 INFO  LoginController:55 - User Role id is 2
+2020-12-22 13:16:02 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-22 13:16:03 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 13:16:03 INFO  ManagerService:60 - View All Tickets Method
+2020-12-22 13:16:03 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-22 13:16:40 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 13:16:40 INFO  ManagerService:60 - View All Tickets Method
+2020-12-22 13:16:40 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-22 13:18:13 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 13:18:13 INFO  LoginController:27 - Login in LoginController
+2020-12-22 13:18:13 INFO  LoginService:16 - Login Method
+2020-12-22 13:18:13 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:18:13 INFO  LoginService:24 - User #4 Found
+2020-12-22 13:18:13 INFO  LoginController:45 - User Found
+2020-12-22 13:18:13 INFO  LoginController:55 - User Role id is 1
+2020-12-22 13:18:13 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-22 13:18:34 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 13:18:34 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:18:35 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 13:18:35 INFO  EmployeeService:37 - View Tickets Method
+2020-12-22 13:18:35 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-22 13:19:20 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:19:20 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:19:20 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:19:20 INFO  LoginService:16 - Login Method
+2020-12-22 13:19:20 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:19:20 INFO  LoginService:21 - User Not Found
+2020-12-22 13:19:20 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:19:20 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:19:20 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:19:20 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-22 13:19:20 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 13:19:20 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:19:20 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-22 13:19:20 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-22 13:20:54 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:20:54 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:20:54 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:20:54 INFO  LoginService:16 - Login Method
+2020-12-22 13:20:54 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:20:54 INFO  LoginService:21 - User Not Found
+2020-12-22 13:20:54 INFO  LoginService:16 - Login Method
+2020-12-22 13:20:54 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:20:54 INFO  LoginService:24 - User #1 Found
+2020-12-22 13:20:54 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:20:54 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:20:54 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:20:54 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-22 13:20:54 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 13:20:54 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:20:54 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-22 13:20:54 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-22 13:21:53 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:21:53 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:21:54 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:21:54 INFO  LoginService:16 - Login Method
+2020-12-22 13:21:54 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:21:54 INFO  LoginService:21 - User Not Found
+2020-12-22 13:21:54 INFO  LoginService:16 - Login Method
+2020-12-22 13:21:54 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:21:54 INFO  LoginService:24 - User #1 Found
+2020-12-22 13:21:54 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:21:54 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:21:54 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:21:54 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-22 13:21:54 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 13:21:54 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:21:54 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-22 13:21:54 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-22 13:24:34 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:24:34 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:24:34 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:24:34 INFO  LoginService:16 - Login Method
+2020-12-22 13:24:34 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:24:34 INFO  LoginService:21 - User Not Found
+2020-12-22 13:24:34 INFO  LoginService:16 - Login Method
+2020-12-22 13:24:34 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:24:34 INFO  LoginService:24 - User #1 Found
+2020-12-22 13:24:34 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:24:34 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:24:34 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:24:34 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-22 13:24:34 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 13:24:34 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:24:34 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-22 13:24:34 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-22 13:24:34 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:24:34 INFO  ManagerDAOImple:29 - Accepting ticket #24
+2020-12-22 13:24:34 INFO  ManagerDAOImple:43 - Ticket is not pending
+2020-12-22 13:24:34 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:24:34 INFO  ManagerDAOImple:71 - Rejecting ticket #24
+2020-12-22 13:24:34 INFO  ManagerDAOImple:85 - Ticket is not pending
+2020-12-22 13:31:07 INFO  EmployeeService:37 - View Tickets Method
+2020-12-22 13:31:07 INFO  EmployeeDAOImple:55 - Viewing Employee 0's Tickets
+2020-12-22 13:31:07 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:31:07 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:31:07 INFO  EmployeeService:19 - Request Method
+2020-12-22 13:31:07 INFO  LoginService:16 - Login Method
+2020-12-22 13:31:07 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:31:07 INFO  LoginService:21 - User Not Found
+2020-12-22 13:31:07 INFO  LoginService:16 - Login Method
+2020-12-22 13:31:07 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 13:31:07 INFO  LoginService:24 - User #1 Found
+2020-12-22 13:31:07 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:31:07 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:31:07 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:31:07 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-22 13:31:07 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 13:31:07 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:31:07 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-22 13:31:07 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-22 13:31:07 INFO  ManagerService:18 - Accept Method
+2020-12-22 13:31:07 INFO  ManagerDAOImple:29 - Accepting ticket #24
+2020-12-22 13:31:07 INFO  ManagerDAOImple:43 - Ticket is not pending
+2020-12-22 13:31:07 INFO  ManagerService:39 - Reject Method
+2020-12-22 13:31:07 INFO  ManagerDAOImple:71 - Rejecting ticket #24
+2020-12-22 13:31:07 INFO  ManagerDAOImple:85 - Ticket is not pending
+2020-12-22 14:40:27 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:13:37 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:15:35 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 16:15:35 INFO  LoginController:27 - Login in LoginController
+2020-12-22 16:15:35 INFO  LoginService:16 - Login Method
+2020-12-22 16:15:35 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 16:15:35 INFO  LoginService:21 - User Not Found
+2020-12-22 16:15:46 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 16:15:46 INFO  LoginController:27 - Login in LoginController
+2020-12-22 16:15:46 INFO  LoginService:16 - Login Method
+2020-12-22 16:15:46 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 16:15:46 INFO  LoginService:24 - User #4 Found
+2020-12-22 16:15:46 INFO  LoginController:45 - User Found
+2020-12-22 16:15:46 INFO  LoginController:55 - User Role id is 1
+2020-12-22 16:15:46 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-22 16:15:54 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 16:15:54 INFO  EmployeeService:19 - Request Method
+2020-12-22 16:15:57 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 16:15:57 INFO  EmployeeService:19 - Request Method
+2020-12-22 16:16:07 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 16:16:07 INFO  EmployeeService:19 - Request Method
+2020-12-22 16:16:07 INFO  EmployeeDAOImple:28 - I'm adding request 0 using EmployeeDAO
+2020-12-22 16:16:08 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:16:08 INFO  EmployeeService:37 - View Tickets Method
+2020-12-22 16:16:08 INFO  EmployeeDAOImple:55 - Viewing Employee 4's Tickets
+2020-12-22 16:16:37 INFO  MasterServlet:73 - Master Servlet doPost Method
+2020-12-22 16:16:37 INFO  LoginController:27 - Login in LoginController
+2020-12-22 16:16:37 INFO  LoginService:16 - Login Method
+2020-12-22 16:16:37 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 16:16:37 INFO  LoginService:24 - User #5 Found
+2020-12-22 16:16:37 INFO  LoginController:45 - User Found
+2020-12-22 16:16:37 INFO  LoginController:55 - User Role id is 2
+2020-12-22 16:16:37 INFO  MasterServlet:83 - 200 Status code from Login
+2020-12-22 16:16:42 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:16:42 INFO  ManagerService:65 - View Pending Tickets Method
+2020-12-22 16:16:42 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-22 16:16:46 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:16:46 INFO  ManagerService:58 - View All Tickets Method
+2020-12-22 16:16:46 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-22 16:16:52 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:16:52 INFO  ManagerService:65 - View Pending Tickets Method
+2020-12-22 16:16:52 INFO  ManagerDAOImple:163 - Viewing Pending Employee's Tickets
+2020-12-22 16:16:57 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-22 16:16:57 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:17:00 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-22 16:17:00 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:17:02 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-22 16:17:02 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:17:02 INFO  ManagerDAOImple:29 - Accepting ticket #50
+2020-12-22 16:17:02 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 16:17:09 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-22 16:17:09 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:17:09 INFO  ManagerDAOImple:29 - Accepting ticket #32
+2020-12-22 16:17:13 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-22 16:17:13 INFO  ManagerService:38 - Reject Method
+2020-12-22 16:17:13 INFO  ManagerDAOImple:71 - Rejecting ticket #27
+2020-12-22 16:17:16 INFO  MasterServlet:108 - Master Servlet doPut Method
+2020-12-22 16:17:16 INFO  ManagerService:38 - Reject Method
+2020-12-22 16:17:16 INFO  ManagerDAOImple:71 - Rejecting ticket #27
+2020-12-22 16:17:16 INFO  ManagerDAOImple:85 - Ticket is not pending
+2020-12-22 16:17:20 INFO  MasterServlet:29 - Master Servlet doGet Method
+2020-12-22 16:17:20 INFO  ManagerService:58 - View All Tickets Method
+2020-12-22 16:17:20 INFO  ManagerDAOImple:113 - Viewing All Employee's Tickets
+2020-12-22 16:18:17 INFO  EmployeeService:37 - View Tickets Method
+2020-12-22 16:18:17 INFO  EmployeeDAOImple:55 - Viewing Employee 0's Tickets
+2020-12-22 16:18:17 INFO  EmployeeService:19 - Request Method
+2020-12-22 16:18:17 INFO  EmployeeService:19 - Request Method
+2020-12-22 16:18:17 INFO  EmployeeService:19 - Request Method
+2020-12-22 16:18:17 INFO  LoginService:16 - Login Method
+2020-12-22 16:18:17 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 16:18:17 INFO  LoginService:21 - User Not Found
+2020-12-22 16:18:17 INFO  LoginService:16 - Login Method
+2020-12-22 16:18:17 INFO  LoginDAOImple:22 - findUser in LoginDAOImple
+2020-12-22 16:18:17 INFO  LoginService:24 - User #1 Found
+2020-12-22 16:18:17 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:18:17 INFO  ManagerService:38 - Reject Method
+2020-12-22 16:18:17 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:18:17 INFO  ManagerDAOImple:29 - Accepting ticket #500
+2020-12-22 16:18:18 INFO  ManagerDAOImple:47 - Ticket not found, bad ticket id input
+2020-12-22 16:18:18 INFO  ManagerService:38 - Reject Method
+2020-12-22 16:18:18 INFO  ManagerDAOImple:71 - Rejecting ticket #500
+2020-12-22 16:18:18 INFO  ManagerDAOImple:89 - Ticket not found, bad ticket id input
+2020-12-22 16:18:18 INFO  ManagerService:18 - Accept Method
+2020-12-22 16:18:18 INFO  ManagerDAOImple:29 - Accepting ticket #24
+2020-12-22 16:18:18 INFO  ManagerDAOImple:43 - Ticket is not pending
+2020-12-22 16:18:18 INFO  ManagerService:38 - Reject Method
+2020-12-22 16:18:18 INFO  ManagerDAOImple:71 - Rejecting ticket #24
+2020-12-22 16:18:18 INFO  ManagerDAOImple:85 - Ticket is not pending

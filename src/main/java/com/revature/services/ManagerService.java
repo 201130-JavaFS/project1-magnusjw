@@ -31,7 +31,6 @@ public class ManagerService {
 		}
 		
 		return "success";
-		
 	}
 	
 	public String reject(int reimbId, int userId) {
@@ -52,7 +51,6 @@ public class ManagerService {
 		}
 		
 		return "success";
-		
 	}
 	
 	public List<Reimbursement> viewAll() {
@@ -68,5 +66,4 @@ public class ManagerService {
 		
 		return mDao.viewPending();
 	}
-	
 }

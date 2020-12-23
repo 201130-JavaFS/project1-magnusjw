@@ -27,5 +27,15 @@ class LoginServiceTest {
 		
 		assertEquals(result, null);
 	}
+	
+	@Test
+	void testGoodLogin() {
+		u.setUsername("guy"); //This is a viable login
+		u.setPassword("guy");
+		
+		User result = ls.login(u.getUsername(), u.getPassword());
+		
+		assertEquals(result.getClass(), User.class);
+	}
 
 }

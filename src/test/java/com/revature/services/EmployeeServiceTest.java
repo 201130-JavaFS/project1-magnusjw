@@ -9,7 +9,6 @@ import com.revature.models.Reimbursement;
 
 class EmployeeServiceTest {
 
-	
 	private static EmployeeService es;
 	private static Reimbursement r;
 	
@@ -17,7 +16,6 @@ class EmployeeServiceTest {
 	public static void setUp() {
 		es = new EmployeeService();
 		r = new Reimbursement();
-		
 	}
 	
 	@Test
@@ -47,8 +45,14 @@ class EmployeeServiceTest {
 		
 		assertEquals(test, "badType");
 	}
+	
+	@Test
+	void testViewTickets() {
+		int size = es.viewTickets(0).size(); //Id 0 is non existant
+		
+		assertEquals(size, 0);
+	}
 }
-
 
 /*
  * assertTrue single params
@@ -61,9 +65,3 @@ class EmployeeServiceTest {
  * assertNull(if null) 1param
  * 
  */
-
-
-
-
-
-

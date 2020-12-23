@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-
 class ManagerServiceTest {
 	
 	private static ManagerService ms;
@@ -30,6 +29,20 @@ class ManagerServiceTest {
 	}
 	
 	@Test
+	void testPendingReimbAcc() {
+		String test = ms.accept(24, 1); //Existing ticket that is not pending
+		
+		assertEquals(test, "pending");
+	}
+	
+	@Test
+	void testPendingReimbRej() {
+		String test = ms.reject(24, 1); //Existing ticket that is not pending
+		
+		assertEquals(test, "pending");
+	}
+	
+	@Test
 	void testIllegalReimbAcc() {
 		String test = ms.accept(500, 1);
 		
@@ -42,6 +55,4 @@ class ManagerServiceTest {
 		
 		assertEquals(test, "notFound");
 	}
-	
-
 }
