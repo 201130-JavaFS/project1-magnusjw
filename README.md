@@ -2,15 +2,15 @@
 
 ## Project Description
 
-My ERS project description, very nice!
+An application to handle reimbursement requests of employees!
 
 ## Technologies Used
 
 ## Features
 
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
+* Employee's can submit reimbursement requests
+* Managers can accept or reject requests.
 * Awesome feature 3
 
 To-do list:
@@ -19,7 +19,7 @@ To-do list:
 
 ## Getting Started
    
-(include git clone command)
+git clone https://github.com/201130-JavaFS/project1-magnusjw.git
 (include all environment setup steps)
 
 > Be sure to include BOTH Windows and Unix command  
